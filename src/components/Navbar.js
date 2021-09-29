@@ -16,7 +16,7 @@ export default function Navbar() {
       <Button variant="outline">
         Gallery
       </Button>
-      <Button variant="outline">Conatact</Button>
+      <Button variant="outline">Contact</Button>
     </HStack>
   </Flex>
   );
