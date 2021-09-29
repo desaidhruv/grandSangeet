@@ -10,7 +10,11 @@ const theme = extendTheme({
       100: '#FF3B63',
     },
   },
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 6b08dfa78f774a4c9460a97cd0fe1ed90c1af627
   components: {
     Button: {
       sizes: {
