@@ -8,7 +8,7 @@ export default function Navbar() {
       <Image h="84px" w="78px" src={logo}/>
     </Box>
     <Spacer />
-    <HStack spacing="20px">
+    <HStack color="white" spacing="20px">
       <Button variant="outline" >
         Home
       </Button>
