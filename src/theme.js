@@ -5,7 +5,6 @@ const config = {
 };
 const theme = extendTheme({
   config,
-
   colors: {
     brand: {
       100: '#FF3B63',

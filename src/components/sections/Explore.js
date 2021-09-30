@@ -8,7 +8,6 @@ export default function Explore() {
         spacing="15px"
         as={Center}
         bgColor="#FFD2DD"
-        border="2px solid red"
         h="500px"
       >
         <svg
