@@ -1,6 +1,7 @@
 import React from 'react'
 import { VStack, Image, Button, Text, Center, HStack } from '@chakra-ui/react';
 import Rohan from '../../assets/photos/Rohan.png'
+import { Divider } from './Divider';
 
 function Team() {
     return (
@@ -36,6 +37,7 @@ function Team() {
                     <Text fontSize="24px" >Rohan Pharek</Text>
                 </VStack>
             </HStack>
+            <Divider/>
         </VStack>
 
     )

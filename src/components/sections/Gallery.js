@@ -12,17 +12,18 @@ export default function Gallery() {
         <>
             <VStack
                 spacing="15px"
+            
                 as={Center}
-                h="1200px"
+                h="800px"
             >
                 <Text fontSize="36px" fontWeight="medium">Gallery</Text>
-                <Tabs>
+                <Tabs colorScheme="brand.100" isFitted>
                     <Center>
 
-                        <TabList>
-                            <Tab>All</Tab>
-                            <Tab>Images</Tab>
-                            <Tab>Videos</Tab>
+                        <TabList outlineColor="brand.100" as={Center} w="400px">
+                            <Tab ringColor="brand.100">All</Tab>
+                            <Tab  ringColor="brand.100">Images</Tab>
+                            <Tab  ringColor="brand.100">Videos</Tab>
                         </TabList>
                     </Center>
 
