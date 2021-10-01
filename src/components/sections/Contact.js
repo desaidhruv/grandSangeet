@@ -11,11 +11,12 @@ import {
   Text,
 } from '@chakra-ui/react';
 import React from 'react';
+import { Divider } from './Divider';
 
 export default function Contact() {
   return (
     <Box w="full">
-      <Text fontSize="48px" h="150px" as={Center}>Contact us</Text>
+      <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">Contact us</Text>
       <Flex w="full" h="600px">
         <VStack  w="50%" w="50%" as={Center} spacing="60px">
           <HStack spacing="60px">
@@ -43,7 +44,7 @@ export default function Contact() {
               <Input variant="flushed" type="name" />
             </FormControl>
             <Flex pl="300px" alignItems="flex-end">
-                <Button size="lg"  bgColor="brand.100" > Send messgae</Button>
+                <Button size="lg"  bgColor="brand.100" color="white"> Send message</Button>
             </Flex>
         </VStack>
 
@@ -51,6 +52,8 @@ export default function Contact() {
 
       </Box>
       </Flex>
+      <Divider />
+
     </Box>
   );
 }

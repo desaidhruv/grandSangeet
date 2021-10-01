@@ -13,31 +13,31 @@ function Team() {
             <Text fontSize="48px" fontWeight="bold">Meet Our Team</Text>
             <HStack spacing={'40px'} direction={["column", "row"]}>
                 <VStack>
-                        <Image
-                            src={Rohan}
-                        />
+                    <Image
+                        src={Rohan}
+                    />
                     <Text fontSize="24px">Rohan Pharek</Text>
                 </VStack>
                 <VStack>
-                        <Image
-                            src={Rohan}
-                        />
+                    <Image
+                        src={Rohan}
+                    />
                     <Text fontSize="24px" >Rohan Pharek</Text>
                 </VStack>
                 <VStack>
-                        <Image
-                            src={Rohan}
-                        />
+                    <Image
+                        src={Rohan}
+                    />
                     <Text fontSize="24px" >Rohan Pharek</Text>
                 </VStack>
                 <VStack>
-                        <Image
-                            src={Rohan}
-                        />
+                    <Image
+                        src={Rohan}
+                    />
                     <Text fontSize="24px" >Rohan Pharek</Text>
                 </VStack>
             </HStack>
-            <Divider/>
+            <Divider />
         </VStack>
 
     )

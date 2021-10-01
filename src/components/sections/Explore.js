@@ -1,6 +1,6 @@
 import React from 'react';
 import { VStack, Image, Button, Text, Center } from '@chakra-ui/react';
-import logo from '../../assets/photos/logo.svg';
+
 export default function Explore() {
   return (
     <>

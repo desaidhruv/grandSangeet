@@ -14,6 +14,7 @@ import Navbar from '../Navbar';
 import bg from '../../assets/photos/bg.png';
 import '@fontsource/poppins';
 import './Hero.css';
+import { Divider } from './Divider';
 import { FaArrowDown } from 'react-icons/fa';
 
 export default function Hero() {
@@ -58,6 +59,7 @@ export default function Hero() {
           </Box>
         </Flex>
       </Box>
+      <Divider />
     </>
   );
 }
