@@ -11,9 +11,12 @@ import {
 import origin from '../../assets/photos/origin.png';
 import mission from '../../assets/photos/mission.png';
 import vision from '../../assets/photos/Vision.png';
+import { Divider } from './Divider';
 
 function About() {
   return (
+    <>
+    
     <VStack as={Center} h="800px">
       <Text fontSize="48px" fontWeight="medium">
         About Us
@@ -109,6 +112,8 @@ function About() {
         </VStack>
       </HStack>
     </VStack>
+      <Divider />
+    </>
   );
 }
 
