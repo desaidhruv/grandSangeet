@@ -5,6 +5,7 @@ import Services from '../components/sections/Services'
 import About from '../components/sections/About'
 import Team from '../components/sections/Team'
 import Community from '../components/sections/Community'
+import Gallery from '../components/sections/Gallery'
 
 export default function Landing() {
     return (
@@ -15,6 +16,7 @@ export default function Landing() {
         <About />
         <Team />
         <Community />
+        <Gallery />
         
         </>
     )
