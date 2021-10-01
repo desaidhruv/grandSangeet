@@ -6,6 +6,8 @@ import Gallery1 from '../../assets/photos/Gallery1.png'
 import Gallery2 from '../../assets/photos/Gallery2.png'
 import Gallery3 from '../../assets/photos/Gallery3.png'
 import Gallery4 from '../../assets/photos/Gallery4.png'
+import { Divider } from './Divider';
+import './gallery.css'
 
 export default function Gallery() {
     return (
@@ -120,7 +122,11 @@ export default function Gallery() {
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
+                <Button color="white" bgColor="brand.100" size="lg">
+                    View More
+                </Button>
             </VStack>
+            <Divider />
         </>
     );
 }
