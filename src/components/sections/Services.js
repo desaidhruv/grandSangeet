@@ -1,7 +1,7 @@
 import React from 'react'
 import { VStack, Image, Text, Center, HStack, Box } from '@chakra-ui/react';
 import services from '../../assets/photos/services.png'
-import serviceLine from '../../assets/photos/service line.png'
+import serviceLine from '../../assets/photos/serviceline.png'
 
 function Services() {
     return (
