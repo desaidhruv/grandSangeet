@@ -9,6 +9,7 @@ import Gallery from '../components/sections/Gallery'
 import Contact from '../components/sections/Contact'
 import WhyWeAre from '../components/sections/WhyWeAre'
 import Footer from '../components/sections/Footer'
+import { Testimonial } from '../components/sections/Testimonial'
 
 export default function Landing() {
     return (
@@ -18,6 +19,7 @@ export default function Landing() {
         <WhyWeAre />
         <Services />
         <Gallery />
+        <Testimonial/>
         <About />
         <Team />
         <Community />
