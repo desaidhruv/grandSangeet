@@ -7,7 +7,7 @@ import Team from '../components/sections/Team'
 import Community from '../components/sections/Community'
 import Gallery from '../components/sections/Gallery'
 import Contact from '../components/sections/Contact'
-import WhyWeAre from '../components/sections/WhyWeAre'
+import {WhyWeAre} from '../components/sections/WhyWeAre'
 import Footer from '../components/sections/Footer'
 import { Testimonial } from '../components/sections/Testimonial'
 
@@ -16,15 +16,15 @@ export default function Landing() {
         <>
         <Hero />
         {/* <Explore /> */}
-        <WhyWeAre />
+        {/* <WhyWeAre /> */}
         <Services />
-        <Gallery />
-        <Testimonial/>
+        <Gallery /> 
+        {/* <Testimonial/> */}
         <About />
-        <Team />
-        <Community />
+        {/* <Team /> */}
+        {/* <Community /> */}
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
         
         </>
     )

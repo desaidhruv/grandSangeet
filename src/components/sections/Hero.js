@@ -28,7 +28,7 @@ export default function Hero() {
         w="full"
         h="1024px"
       >
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Flex as={Center} h="80%" color="white" flexDirection="column">
           <Box></Box>

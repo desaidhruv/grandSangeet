@@ -6,18 +6,13 @@ const Fonts = () => (
       /* latin */
       @font-face {
         font-family: 'Heading Minnadrop-Regular';
-
-        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'), 
+        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'): 
  
      }
       @font-face {
         font-family: 'Body Minnadrop-Regular';
-
-        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'), 
-     
-    }
-
-      `}
+        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'); 
+    }`}
   />
 );
 

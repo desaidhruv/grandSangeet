@@ -6,8 +6,8 @@ const config = {
 };
 const theme = extendTheme({
     // fonts: {
-    //   heading: "Heading innadrop Regular",
-    //   body: "Body Font innadrop Regular",
+    //   heading: "Minnadrop-Regular",
+    //   body: "Minnadrop-Regular",
     // },
   config,
   colors: {
