@@ -16,7 +16,7 @@ export default function Landing() {
         <>
         <Hero />
         {/* <Explore /> */}
-        {/* <WhyWeAre /> */}
+        <WhyWeAre />
         <Services />
         <Gallery /> 
         {/* <Testimonial/> */}

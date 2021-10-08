@@ -36,7 +36,7 @@ export default function Gallery() {
 
           <TabPanels>
             <TabPanel>
-              <SimpleGrid columns={[2,2,2,4]} spacingX="18px" spacingY="20px">
+              <SimpleGrid columns={[2,2,4,4]} spacingX="18px" spacingY="20px">
                 <VStack  display={["none","none","flex","flex"]}>
                   <Image
 
