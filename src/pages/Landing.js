@@ -19,7 +19,7 @@ export default function Landing() {
         <WhyWeAre />
         <Services />
         <Gallery /> 
-        {/* <Testimonial/> */}
+        <Testimonial/>
         <About />
         {/* <Team /> */}
         {/* <Community /> */}

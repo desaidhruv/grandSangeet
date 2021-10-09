@@ -6,22 +6,32 @@ import {
   Text,
   Center,
   Flex,
+  Box,
   HStack,
   SimpleGrid,
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Rohan from '../../assets/photos/Rohan.png';
-import Gallery1 from '../../assets/photos/Gallery1.png';
-import Gallery2 from '../../assets/photos/Gallery2.png';
-import Gallery3 from '../../assets/photos/Gallery3.png';
-import Gallery4 from '../../assets/photos/Gallery4.png';
+import Gallery1 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.14.56 PM.jpeg';
+import Gallery2 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.14.58 PM.jpeg';
+import Gallery3 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.00 PM.jpeg';
+import Gallery4 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.02 PM.jpeg';
+import Gallery5 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.03 PM.jpeg';
+import Gallery6 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.05 PM.jpeg';
+import Gallery7 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.06 PM.jpeg';
+import Gallery8 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.07 PM.jpeg';
+import Gallery9 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.08 PM.jpeg';
+import Gallery10 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.09 PM.jpeg';
+import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
+import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
+import Gallery13 from '../../assets/photos/Gallery4.png';
 import { Divider } from './Divider';
 import './gallery.css';
 
 export default function Gallery() {
   return (
     <>
-      <Flex direction="column" spacing="15px" as={Center}  h="800px">
+      <Flex direction="column" spacing="15px" as={Center} h="800px">
         <Text fontSize="36px" fontWeight="medium">
           Gallery
         </Text>
@@ -36,91 +46,84 @@ export default function Gallery() {
 
           <TabPanels>
             <TabPanel>
-              <SimpleGrid columns={[2,2,4,4]} spacingX="18px" spacingY="20px">
-                <VStack  display={["none","none","flex","flex"]}>
+              <SimpleGrid
+                columns={[2, 2, 4, 4]}
+                spacingX="18px"
+                spacingY="20px"
+              >
+                <VStack display={['none', 'none', 'flex', 'flex']}>
                   <Image
-
-                    h={['107px', '107px','107px', '206px']}
-                    w={['151px', '151px','151px',  '290px']}
-                    src={Gallery1}
-                  />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
-                </VStack>
-                <VStack display={["none","none","flex","flex"]}>
-                  <Image
-
-                    h={['107px', '107px','107px', '206px']}
-                    w={['151px', '151px','151px',  '290px']}
-                    src={Gallery2}
-                  />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
-                </VStack>
-                <VStack>
-                  <Image
-                    h={['107px', '107px','107px', '206px']}
-                    w={['151px', '151px', '151px', '290px']}
-                    src={Gallery3}
-                  />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
-                </VStack>
-                <VStack>
-                  <Image
-                    h={['107px', '107px','107px', '206px']}
-                    w={['151px', '151px', '151px', '290px']}
-                    src={Gallery4}
-                  />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
-                </VStack>
-                <VStack>
-                  <Image
-                    h={['107px', '107px','107px', '206px']}
+                    h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery1}
                   />
-                  <Text ffontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
-                <VStack>
+                <VStack display={['none', 'none', 'flex', 'flex']}>
                   <Image
-                    h={['107px', '107px', '107px','206px']}
+                    h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery2}
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
-                  <Image
-                    h={['107px', '107px', '107px','206px']}
-                    w={['151px', '151px','151px',  '290px']}
+                  {/* <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
                     src={Gallery3}
-                  />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
+                  /> */}
+                   <iframe
+                   height="80%"
+                   width="80%"
+                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="true"
+                ></iframe>
+                  {/* <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text> */}
                 </VStack>
                 <VStack>
                   <Image
-                    h={['107px', '107px', '107px','206px']}
-                    w={['151px', '151px','151px',  '290px']}
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
                     src={Gallery4}
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>
-                  Shimla bride
-                  </Text>
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
-
-              
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery5}
+                  />
+                  <Text ffontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery6}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery7}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery8}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
               </SimpleGrid>
               {/* <Image src={Gallery1} />
 
@@ -139,28 +142,107 @@ export default function Gallery() {
               <Image src={Gallery4} /> */}
             </TabPanel>
             <TabPanel>
-              <HStack>
-                <VStack>
-                  <Image src={Gallery1} />
-                  <Text fontSize="24px">Shimla bride</Text>
+              <SimpleGrid
+                columns={[2, 2, 4, 4]}
+                spacingX="18px"
+                spacingY="20px"
+              >
+                <VStack display={['none', 'none', 'flex', 'flex']}>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery1}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack display={['none', 'none', 'flex', 'flex']}>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery2}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
-                  <Image src={Gallery2} />
-                  <Text fontSize="24px">Shimla bride</Text>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery3}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
-              </HStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery4}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery5}
+                  />
+                  <Text ffontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery6}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery7}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '206px']}
+                    w={['151px', '151px', '151px', '290px']}
+                    src={Gallery8}
+                  />
+                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
+                </VStack>
+              </SimpleGrid>
             </TabPanel>
             <TabPanel>
-              <HStack>
-                <VStack>
-                  <Image src={Gallery3} />
-                  <Text fontSize="24px">Shimla bride</Text>
-                </VStack>
-                <VStack>
-                  <Image src={Gallery4} />
-                  <Text fontSize="24px">Shimla bride</Text>
-                </VStack>
-              </HStack>
+              <SimpleGrid
+                columns={[2, 2, 2, 2]}
+                spacingX="18px"
+                spacingY="20px"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+
+                <iframe
+                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                {/* </Box> */}
+              </SimpleGrid>
             </TabPanel>
           </TabPanels>
         </Tabs>

@@ -18,7 +18,7 @@ export const WhyWeAre = () => {
 
 
   return (
-    <VStack  spacing="40px" h="600px" as={Center} dire >  
+    <VStack  spacing="40px" h="600px" as={Center}>  
     <Text fontSize="40px">
       Why We Are
     </Text>
