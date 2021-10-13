@@ -135,7 +135,7 @@ function Community() {
                 </Text>
                 <HStack spacing="30px">
                     <Button color="white" bgColor="brand.100" size="lg">
-                        Join now
+                        Join us
                     </Button>
                     <Button variant="outline" size="lg" color="brand.100">
                         {' '}
