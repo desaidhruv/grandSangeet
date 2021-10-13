@@ -1,18 +1,14 @@
 import { Global } from '@emotion/react';
-
+// import "./assets/fonts/Minnadrop-Regular.ttf"
 const Fonts = () => (
   <Global
     styles={`
-      /* latin */
       @font-face {
-        font-family: 'Heading Minnadrop-Regular';
-        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'): 
- 
-     }
-      @font-face {
-        font-family: 'Body Minnadrop-Regular';
-        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'); 
-    }`}
+        font-family: 'Minnadrop';
+        src: url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype'), url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype');
+      }
+    
+      `}
   />
 );
 

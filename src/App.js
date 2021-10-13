@@ -6,14 +6,11 @@ import Hero from './components/sections/Hero';
 import Landing from './pages/Landing';
 import Fonts from './Fonts';
 
-
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Fonts/>
-      <>
-      <Landing/>
-      </>
+      <Fonts />
+      <Landing />
     </ChakraProvider>
   );
 }

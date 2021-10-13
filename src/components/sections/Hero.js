@@ -16,7 +16,7 @@ import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
 import { FaArrowDown } from 'react-icons/fa';
-
+import "../../App.css"
 export default function Hero() {
   return (
     <>
@@ -40,7 +40,7 @@ export default function Hero() {
           <Box></Box>
           <Spacer />
           <VStack spacing="20px">
-            <Heading fontSize="96px" zIndex="2">Grand Sangeet</Heading>
+            <Text fontSize="96px" zIndex="2" fontWeight="semibold">Grand Sangeet</Text>
             <Text
               fontFamily="Poppins"
               zIndex="2"

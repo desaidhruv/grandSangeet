@@ -24,7 +24,7 @@ function Services() {
         // backgroundRepeat="no-repeat"
       >
         <Text
-          fontFamily="innadrop"
+
           p="20px"
           fontSize={['20px', '20px', '36px']}
           fontWeight="bold"

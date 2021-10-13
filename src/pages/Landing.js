@@ -10,6 +10,7 @@ import Contact from '../components/sections/Contact'
 import {WhyWeAre} from '../components/sections/WhyWeAre'
 import Footer from '../components/sections/Footer'
 import { Testimonial } from '../components/sections/Testimonial'
+import Work from '../components/sections/Work'
 
 export default function Landing() {
     return (
@@ -18,6 +19,7 @@ export default function Landing() {
         {/* <Explore /> */}
         <WhyWeAre />
         <Services />
+        <Work/>
         <Gallery /> 
         <Testimonial/>
         <About />

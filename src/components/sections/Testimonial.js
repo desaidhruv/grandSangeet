@@ -31,7 +31,6 @@ export const Testimonial = () => {
         <Box as={Center} >
           <Image src={tt4} />
         </Box>
-
         {/* <Item>2</Item>
         <Item>3</Item>
         <Item>4</Item>

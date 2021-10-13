@@ -5,17 +5,17 @@ const config = {
   useSystemColorMode: false,
 };
 const theme = extendTheme({
-    // fonts: {
-    //   heading: "Minnadrop-Regular",
-    //   body: "Minnadrop-Regular",
-    // },
+  fonts: {
+    Heading: 'Minnadrop',
+    body: 'Minnadrop',
+  },
   config,
   colors: {
     brand: {
       100: '#FF3B63',
     },
   },
-  
+
   components: {
     Button: {
       sizes: {
