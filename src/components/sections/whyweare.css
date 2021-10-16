@@ -1,0 +1,61 @@
+.kVtMtA {
+    background: url('../../assets/photos/back arrow.svg') no-repeat !important;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border-radius: 0% !important;
+    box-shadow: none !important;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 10px;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    left:175px !important;
+    right: initial;
+}
+.kVtMtA::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: transparent;
+    border-top: 0px solid #000 !important;
+    border-right: 0px solid #000 !important;
+    display: inline-block;
+    position: absolute;
+    top: 0% !important;
+    left: 0% !important;
+    
+}
+
+.bhRnqO {
+    background: url('../../assets/photos/aroow.svg') no-repeat !important;
+    position: absolute;
+    top: calc(50% - 17.5px);
+    height: 45px;
+    width: 45px !important;
+    border-radius: 0% !important;
+    box-shadow: none !important;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 10px;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    left: initial;
+    right: 205px !important;
+}
+
+.bhRnqO::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: transparent;
+    border-top: 0px solid #000 !important;
+    border-right: 0px solid #000 !important;
+    display: inline-block;
+    position: absolute;
+    top: 0% !important;
+    left: 0% !important;
+}

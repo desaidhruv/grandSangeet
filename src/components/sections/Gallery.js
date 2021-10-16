@@ -37,7 +37,7 @@ export default function Gallery() {
         </Text>
         <Tabs colorScheme="brand.100" isFitted>
           <Center>
-            <TabList outlineColor="brand.100" as={Center} w="400px">
+            <TabList outlineColor="brand.100" as={Center} w={['300px', '300px', '400px']}>
               <Tab ringColor="brand.100">All</Tab>
               <Tab ringColor="brand.100">Images</Tab>
               <Tab ringColor="brand.100">Videos</Tab>
@@ -73,15 +73,15 @@ export default function Gallery() {
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery3}
                   /> */}
-                   <iframe
-                   height="80%"
-                   width="80%"
-                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen="true"
-                ></iframe>
+                  <iframe
+                    height="80%"
+                    width="80%"
+                    src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="true"
+                  ></iframe>
                   {/* <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text> */}
                 </VStack>
                 <VStack>

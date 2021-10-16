@@ -14,6 +14,7 @@ import banner3 from '../../assets/photos/banner3.svg';
 import banner4 from '../../assets/photos/banner4.svg';
 import arrow from '../../assets/photos/aroow.svg';
 import backarrow from '../../assets/photos/back arrow.svg';
+import './whyweare.css'
 // import {
 //   CarouselProvider,
 //   Slider,
@@ -26,8 +27,50 @@ import backarrow from '../../assets/photos/back arrow.svg';
 // import 'pure-react-carousel/dist/react-carousel.es.css';
 import Carousel from 'react-grid-carousel';
 import { Divider } from './Divider';
+import styled from 'styled-components'
 
 export const WhyWeAre = () => {
+  const ArrowBtn = styled.span`
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: ${({ type }) => (type === 'right' ? '-40px' : 'unset')};
+  left: ${({ type }) => (type === 'left' ? '-40px' : 'unset')};
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: ${({ type }) =>
+      type === 'right'
+        ? 'translate(-75%, -50%) rotate(45deg)'
+        : 'translate(-25%, -50%) rotate(-135deg)'};
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #666;
+    border-right: 2px solid #666;
+  }
+  &:hover::after {
+    border-color: #333;
+  }
+`
+  const MyDot = ({ isActive }) => (
+    <span
+      style={{
+        display: 'inline-block',
+        height: isActive ? '8px' : '5px',
+        width: isActive ? '8px' : '5px',
+        background: '#FF3B63'
+      }}
+    ></span>
+  )
   return (
     <>
       <Text
@@ -39,20 +82,20 @@ export const WhyWeAre = () => {
         Why we are?
       </Text>
 
-      <Box position="relative">
-        <Carousel scrollSnap={true} showDots={true} cols={1} rows={1} loop>
+      <Box position="relative" p="50px 0px 50px">
+        <Carousel scrollSnap={true} showDots={true} cols={1} rows={1} loop dot={MyDot} autoplay={4000}>
           <Carousel.Item>
-            <Box position="relative" as={Center} h="500px">
+            <Box position="relative" as={Center}>
               <Image src={banner1} />
             </Box>
           </Carousel.Item>
           <Carousel.Item>
-            <Box as={Center} h="500px">
+            <Box as={Center}>
               <Image src={banner2} />
             </Box>
           </Carousel.Item>
           <Carousel.Item>
-            <Box as={Center} h="500px">
+            <Box as={Center}>
               <Image src={banner3} />
             </Box>
           </Carousel.Item>

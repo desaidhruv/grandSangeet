@@ -24,7 +24,7 @@ function Work() {
           How Grand Sangeet work?
         </Text>
         <Flex
-          pb="100px"
+          pb="120px"
           fontFamily="Poppins"
           justify="space-evenly"
           w="full"
@@ -50,9 +50,11 @@ function Work() {
               through their sample and work applications sent to us.
             </Text>
           </VStack>
-          <VStack as={Center} pb="150px">
+          <VStack as={Center} pb="20px">
             <Image
-            
+              mt={['60px', '0px', '0px']}
+              // className="arrow-rotate"
+              transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
               src={arrow}
             />
           </VStack>
@@ -77,9 +79,10 @@ function Work() {
               wedding choreography skills like techniques, and experience, etc.
             </Text>
           </VStack>
-          <VStack as={Center} pb="150px">
+          <VStack as={Center} pb="20px">
             <Image
-    
+              mt={['60px', '0px', '0px']}
+              transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
               src={arrow}
             />
           </VStack>
@@ -104,8 +107,11 @@ function Work() {
               they might need to improve and make them keen on it.
             </Text>
           </VStack>
-          <VStack as={Center} pb="150px">
-            <Image src={arrow} />
+          <VStack as={Center} pb="40px">
+            <Image  
+              mt={['60px', '0px', '0px']}
+              transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
+              src={arrow} />
           </VStack>
           <VStack>
             <Box
