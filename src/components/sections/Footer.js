@@ -74,86 +74,14 @@ export default function Footer() {
           </Stack>
         </HStack>
       </HStack>
-      <HStack pt="20px" as={Center} justifyContent="space-between" pr="180px" pl="80px" color="white">
-        <VStack align="self-start">
-          <Text fontSize="20px">Service</Text>
-          <Text fontSize="14px" fontWeight="light">
-            Wedding events
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Platinum orginazation
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            VIP
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Deals
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Seasonal Items
-          </Text>
-        </VStack>
-        <VStack align="self-start">
-          <Text fontSize="20px">Find us One</Text>
-         
-          <Text fontSize="14px" fontWeight="light">
-            Instagram
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Facebook
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            TikTok
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Snapchat
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-           Twitter
-           </Text>
-        </VStack>
-        <VStack align="self-start">
-          <Text fontSize="20px">Product</Text>
-          <Text fontSize="14px" fontWeight="light">
-            Get the App
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Loyalty Program
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-          Affiliates
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-          Press
-          </Text>
-          
-        </VStack>
-        <VStack align="self-start">
-          <Text fontSize="20px">Help </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Returns
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-           FAQ
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Contact
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Community
-          </Text>
-          <Text fontSize="14px" fontWeight="light">
-            Videos
-          </Text>
-        </VStack>
-      </HStack>
+        
       <Flex justifyContent="end" pr="50px" color="white" h="100px" align="center">
-          <Text pr="20px">
-              Terms
-          </Text>
-          <Text>
-              Privacy Policy
-          </Text>
+        <Text pr="20px">
+          Terms
+        </Text>
+        <Text>
+          Privacy Policy
+        </Text>
       </Flex>
     </Box>
   );
