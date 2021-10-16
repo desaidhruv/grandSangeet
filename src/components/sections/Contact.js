@@ -21,7 +21,7 @@ import phone from '../../assets/photos/phone.svg';
 
 export default function Contact() {
   return (
-    <Box w="full">
+    <Box fontFamily="Poppins" w="full">
       <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">
         Contact us
       </Text>

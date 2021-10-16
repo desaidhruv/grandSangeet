@@ -18,10 +18,10 @@ function About() {
   return (
     <>
       <VStack pt="80px" as={Center}>
-        <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
+        <Text fontFamily="Poppins" fontSize={['36px', '36px', '48px']} fontWeight="bold">
           About Us
         </Text>
-        <HStack as={Center}>
+        <Flex pt="20px" direction={["column","row"]} as={Center}>
           <svg
             width="44"
             height="40"
@@ -38,15 +38,12 @@ function About() {
               fill="#FF3B63"
             />
           </svg>
-          <Text fontSize="36px" color="#FF3B63">
+          <Text pl="20px" fontSize="36px" color="#FF3B63">
             Grand Sangeet
           </Text>
-        </HStack>
-        <Text   w={["300px","300px","500px"]}as={Center} textAlign="center" h="100px">
-          Blazing fast web hosting for individuals and businesses of all sizes
-          backed by 24x7x365 Support.Blazing fast web.
-        </Text>
-        <Flex justify="space-evenly" w="full" h={['1200px','1200px','full',"full"]}  direction={['column', 'column','column','row']}>
+        </Flex>
+       
+        <Flex fontFamily="Poppins" pt="20px" justify="space-evenly" w="full" h={['1200px','1200px','full',"full"]}  direction={['column', 'column','column','row']}>
           <VStack>
             <Box
               w={['165px', '165px', '180px']}

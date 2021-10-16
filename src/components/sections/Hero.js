@@ -16,42 +16,53 @@ import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
 import { FaArrowDown } from 'react-icons/fa';
-import "../../App.css"
+import '../../App.css';
 export default function Hero() {
   return (
     <>
       <Box
-        // opacity="0.3"
-       
         backgroundImage={bggif}
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
         backgroundSize="cover"
         w="full"
         h="100vh"
-        pos='relative'
+        pos="relative"
       >
-        <Box w="full" bg="black" opacity=".4" h="full" position="absolute"> 
+        <Box
+          w="full"
+          bg="black"
+          opacity=".4"
+          h="full"
+          position="absolute"
+        ></Box>
+        <Navbar />
 
-        </Box>
-        <Navbar/>
-
-        <Flex as={Center} zIndex="2" h="80%" color="white" flexDirection="column">
+        <Flex
+          as={Center}
+          zIndex="2"
+          h="80%"
+          color="white"
+          flexDirection="column"
+        >
           <Box></Box>
           <Spacer />
           <VStack spacing="20px">
-            <Text fontSize="96px" zIndex="2" fontWeight="semibold">Grand Sangeet</Text>
+            <Text fontSize={["46px","40px","96px"]} zIndex="2" fontWeight="semibold">
+              Grand Sangeet
+            </Text>
             <Text
               fontFamily="Poppins"
               zIndex="2"
               textAlign="center"
-              fontSize="20px"
+              fontSize={["14px","14px","20px"]}
+              w={["80%","100%"]}
               h="65px"
             >
-              Blazing fast web hosting for individuals and businesses of all{' '}
+              Blazing fast web hosting for individuals  and businesses of all
               <br /> sizes backed by 24x7x365 Support.
             </Text>
-            <Button bg="brand.100" size="l">
+            <Button fontFamily="Poppins" fontWeight="normal" fontSize={["14px","14px","20px"]}   bg="brand.100" w={["120px","200px","200px"]} h={["40px","60px",'60px']} >
               Book now
             </Button>
           </VStack>
