@@ -34,7 +34,7 @@ export default function Hero() {
         <Box w="full" bg="black" opacity=".4" h="full" position="absolute"> 
 
         </Box>
-        {/* <Navbar/> */}
+        <Navbar/>
 
         <Flex as={Center} zIndex="2" h="80%" color="white" flexDirection="column">
           <Box></Box>
