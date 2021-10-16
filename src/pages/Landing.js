@@ -1,5 +1,4 @@
 import React from 'react'
-import Explore from "../components/sections/Explore"
 import Hero from '../components/sections/Hero'
 import Services from '../components/sections/Services'
 import About from '../components/sections/About'
@@ -16,17 +15,16 @@ export default function Landing() {
     return (
         <>
         <Hero />
-        {/* <Explore /> */}
         <WhyWeAre />
         <Services />
         <Work/>
         <Gallery /> 
         <Testimonial/>
         <About />
-        {/* <Team /> */}
-        {/* <Community /> */}
+        <Team />
+        <Community />
         <Contact />
-        {/* <Footer /> */}
+        <Footer />
         
         </>
     )

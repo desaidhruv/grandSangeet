@@ -12,7 +12,7 @@
     opacity: 0.6;
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
-    left:175px !important;
+    left:20% !important;
     right: initial;
 }
 .kVtMtA::before {
@@ -44,7 +44,7 @@
     -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     left: initial;
-    right: 205px !important;
+    right: 20% !important;
 }
 
 .bhRnqO::before {

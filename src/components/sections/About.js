@@ -17,7 +17,7 @@ import { Divider } from './Divider';
 function About() {
   return (
     <>
-      <VStack pt="80px" as={Center}>
+      <VStack pt="80px" pb="30px" as={Center}>
         <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
           About Us
         </Text>

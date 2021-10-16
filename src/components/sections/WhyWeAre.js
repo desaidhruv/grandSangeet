@@ -65,9 +65,11 @@ export const WhyWeAre = () => {
     <span
       style={{
         display: 'inline-block',
-        height: isActive ? '8px' : '5px',
-        width: isActive ? '8px' : '5px',
-        background: '#FF3B63'
+        marginTop: '30px',
+        height: isActive ? '10px' : '12px',
+        width: isActive ? '24px' : '12px',
+        background: isActive ? '#FF3B63' : '#FFD2DD',
+        borderRadius: '15px',
       }}
     ></span>
   )
