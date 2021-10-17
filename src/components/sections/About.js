@@ -17,13 +17,8 @@ import { Divider } from './Divider';
 function About() {
   return (
     <>
-<<<<<<< HEAD
-      <VStack pt="80px" as={Center}>
-        <Text fontFamily="Poppins" fontSize={['36px', '36px', '48px']} fontWeight="bold">
-=======
       <VStack pt="80px" pb="30px" as={Center}>
         <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
->>>>>>> 5596a193da9f1ebed739a923c965b6aecd5fbe4e
           About Us
         </Text>
         <Flex pt="20px" direction={["column","row"]} as={Center}>
