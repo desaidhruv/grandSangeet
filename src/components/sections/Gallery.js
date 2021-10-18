@@ -56,23 +56,18 @@ export default function Gallery() {
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery1}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack display={['none', 'none', 'flex', 'flex']}>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery2}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
-                  {/* <Image
-                    h={['107px', '107px', '107px', '206px']}
-                    w={['151px', '151px', '151px', '290px']}
-                    src={Gallery3}
-                  /> */}
                   <iframe
                     height="80%"
                     width="80%"
@@ -89,57 +84,42 @@ export default function Gallery() {
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery4}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery5}
+                    borderRadius="15px"
                   />
-                  <Text ffontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery6}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery7}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery8}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
               </SimpleGrid>
-              {/* <Image src={Gallery1} />
-
-              <Image src={Gallery2} />
-
-              <Image src={Gallery3} />
-
-              <Image src={Gallery4} />
-
-              <Image src={Gallery3} />
-
-              <Image src={Gallery2} />
-
-              <Image src={Gallery1} />
-
-              <Image src={Gallery4} /> */}
             </TabPanel>
             <TabPanel>
               <SimpleGrid
@@ -152,64 +132,64 @@ export default function Gallery() {
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery1}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack display={['none', 'none', 'flex', 'flex']}>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery2}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery3}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery4}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery5}
+                    borderRadius="15px"
                   />
-                  <Text ffontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery6}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery7}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
                     src={Gallery8}
+                    borderRadius="15px"
                   />
-                  <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text>
                 </VStack>
               </SimpleGrid>
             </TabPanel>
@@ -241,7 +221,6 @@ export default function Gallery() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-                {/* </Box> */}
               </SimpleGrid>
             </TabPanel>
           </TabPanels>

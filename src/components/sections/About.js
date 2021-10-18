@@ -2,11 +2,9 @@ import React from 'react';
 import {
   VStack,
   Image,
-  Button,
   Text,
   Center,
   Flex,
-  HStack,
   Box,
 } from '@chakra-ui/react';
 import origin from '../../assets/photos/origin.png';

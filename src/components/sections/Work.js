@@ -33,7 +33,6 @@ function Work() {
         >
           <VStack>
             <Box
-              //   boxShadow="5px 5px 11px 0px #0000001A"
               rounded={'17px'}
               bg={'white'}
               as={Center}
@@ -44,7 +43,7 @@ function Work() {
                 src={Application}
               />
             </Box>
-            <Text fontSize="30px">Origin</Text>
+            <Text fontSize="30px">Application</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
               We find the best hand-picked choreographers across pan India
               through their sample and work applications sent to us.
@@ -53,16 +52,12 @@ function Work() {
           <VStack as={Center} pb="20px">
             <Image
               mt={['60px', '0px', '0px']}
-              // className="arrow-rotate"
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
               src={arrow}
             />
           </VStack>
           <VStack>
             <Box
-              //   w={['165px', '165px', '180px']}
-              //   h={['160px', '160px', '230px']}
-              //   boxShadow="5px 5px 11px 0px #0000001A"
               rounded={'17px'}
               bg={'white'}
               as={Center}
@@ -73,7 +68,7 @@ function Work() {
                 src={Audtion}
               />
             </Box>
-            <Text fontSize="30px">Mission</Text>
+            <Text fontSize="30px">Audition</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
               Choreographers' auditions would be shortlisted based on their
               wedding choreography skills like techniques, and experience, etc.
@@ -88,9 +83,6 @@ function Work() {
           </VStack>
           <VStack>
             <Box
-              //   w={['165px', '165px', '180px']}
-              //   h={['160px', '160px', '230px']}
-              //   boxShadow="5px 5px 11px 0px #0000001A"
               rounded={'17px'}
               bg={'white'}
               as={Center}
@@ -101,7 +93,7 @@ function Work() {
                 src={Training}
               />
             </Box>
-            <Text fontSize="30px">Vision</Text>
+            <Text fontSize="30px">Training & Evaluation</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
               Choreographers will get a higher level of training on the skills
               they might need to improve and make them keen on it.
@@ -115,10 +107,6 @@ function Work() {
           </VStack>
           <VStack>
             <Box
-            //   w={['165px', '165px', '180px']}
-            //   h={['160px', '160px', '230px']}
-            //   boxShadow="5px 5px 11px 0px #0000001A"
-            //   rounded={'17px'}
             >
               <Image
                 w={['165px', '165px', '180px']}
@@ -126,7 +114,7 @@ function Work() {
                 src={onBoard}
               />
             </Box>
-            <Text fontSize="30px">Vision</Text>
+            <Text fontSize="30px">Onboarding/Listing</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
               Our best choreographers with keen skills will be list on board on
               our website to find the best according to their needs.

@@ -8,10 +8,10 @@ import {
   HStack,
   Button,
 } from '@chakra-ui/react';
-import banner1 from '../../assets/photos/banner1.svg';
-import banner2 from '../../assets/photos/banner2.svg';
-import banner3 from '../../assets/photos/banner3.svg';
-import banner4 from '../../assets/photos/banner4.svg';
+import banner1 from '../../assets/photos/Service1.png';
+import banner2 from '../../assets/photos/Service2.png';
+import banner3 from '../../assets/photos/Service3.png';
+import banner4 from '../../assets/photos/Service4.png';
 import arrow from '../../assets/photos/aroow.svg';
 import backarrow from '../../assets/photos/back arrow.svg';
 import './whyweare.css'
@@ -99,6 +99,11 @@ export const WhyWeAre = () => {
           <Carousel.Item>
             <Box as={Center}>
               <Image src={banner3} />
+            </Box>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Box as={Center}>
+              <Image src={banner4} />
             </Box>
           </Carousel.Item>
         </Carousel>

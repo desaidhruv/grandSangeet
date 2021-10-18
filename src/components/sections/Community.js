@@ -26,7 +26,7 @@ function Community() {
                     <VStack
                         boxShadow="5px 5px 11px 0px #0000001A"
                         w={'290px'}
-                        h={'530px'}
+                        h={'477px'}
                         rounded={'17px'}
                         bg={'white'}
                         as={Center}
@@ -43,16 +43,13 @@ function Community() {
                                 individuals and businesses of all <br />
                                 sizes backed by 24x7x365 <br />
                                 Support.Blazing fast web.
-                            </Text>
-                            <Text fontSize="18px" textAlign="center" color="#FF3B63">
-                                Learn more
                             </Text>
                         </VStack>
                     </VStack>
                     <VStack
                         boxShadow="5px 5px 11px 0px #0000001A"
                         w={'290px'}
-                        h={'530px'}
+                        h={'477px'}
                         rounded={'17px'}
                         bg={'white'}
                         as={Center}
@@ -69,16 +66,13 @@ function Community() {
                                 individuals and businesses of all <br />
                                 sizes backed by 24x7x365 <br />
                                 Support.Blazing fast web.
-                            </Text>
-                            <Text fontSize="18px" textAlign="center" color="#FF3B63">
-                                Learn more
                             </Text>
                         </VStack>
                     </VStack>
                     <VStack
                         boxShadow="5px 5px 11px 0px #0000001A"
                         w={'290px'}
-                        h={'530px'}
+                        h={'477px'}
                         rounded={'17px'}
                         bg={'white'}
                         as={Center}
@@ -95,16 +89,13 @@ function Community() {
                                 individuals and businesses of all <br />
                                 sizes backed by 24x7x365 <br />
                                 Support.Blazing fast web.
-                            </Text>
-                            <Text fontSize="18px" textAlign="center" color="#FF3B63">
-                                Learn more
                             </Text>
                         </VStack>
                     </VStack>
                     <VStack
                         boxShadow="5px 5px 11px 0px #0000001A"
                         w={'290px'}
-                        h={'530px'}
+                        h={'477px'}
                         rounded={'17px'}
                         bg={'white'}
                         as={Center}
@@ -121,9 +112,6 @@ function Community() {
                                 individuals and businesses of all <br />
                                 sizes backed by 24x7x365 <br />
                                 Support.Blazing fast web.
-                            </Text>
-                            <Text fontSize="18px" textAlign="center" color="#FF3B63">
-                                Learn more
                             </Text>
                         </VStack>
                     </VStack>
