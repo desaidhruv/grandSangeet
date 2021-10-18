@@ -3,11 +3,10 @@ import { Global } from '@emotion/react';
 const Fonts = () => (
   <Global
     styles={`
-      @font-face {
-        font-family: 'Minnadrop';
-        src: url('./assets/fonts/Minnadrop-Regular.otf') format('otf'), url('./assets/fonts/Minnadrop-Regular.otf') format('otf');
+      @font-face {    
+        font-family:'Minnadrop'; 
+        src: url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype'), url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype')
       }
-    
       `}
   />
 );

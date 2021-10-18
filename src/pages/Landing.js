@@ -24,7 +24,7 @@ export default function Landing() {
         <Team />
         <Community />
         <Contact />
-        <Footer />
+        {/* <Footer /> */}
         
         </>
     )
