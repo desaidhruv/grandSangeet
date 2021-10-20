@@ -52,15 +52,16 @@ function Services() {
             >
               <Image src={services} />
             </Box>
-            <Text fontSize={['20px', '20px', '30px']}>Wedding</Text>
+            <Text fontSize={['20px', '20px', '30px']}>Choreographer</Text>
             <Text
               fontSize={['12px', '12px', '18px']}
               color="#707070"
               textAlign="center"
             >
-              Blazing fast web hosting for individuals <br />
-              and businesses of all sizes backed by <br />
-              24x7x365 Support.Blazing fast web.
+              We provide wedding choreographers <br />
+              who know how to glam up your sangeet <br />
+              night and if you're looking for a lot of <br />
+              masti, then you're at the right place.
             </Text>
           </VStack>
           <VStack>
@@ -74,15 +75,16 @@ function Services() {
             >
               <Image src={services} />
             </Box>
-            <Text fontSize={['20px', '20px', '30px']}>Wedding</Text>
+            <Text fontSize={['20px', '20px', '30px']}>Anchor</Text>
             <Text
               fontSize={['12px', '12px', '18px']}
               color="#707070"
               textAlign="center"
             >
-              Blazing fast web hosting for individuals <br />
-              and businesses of all sizes backed by <br />
-              24x7x365 Support.Blazing fast web.
+              We provide wedding Anchor who will not <br />
+              let you miss out on the entertainment <br />
+              on your sangeet night because that's <br />
+              your day to  rock-and-roll.
             </Text>
           </VStack>
           <VStack>
@@ -96,15 +98,16 @@ function Services() {
             >
               <Image src={services} />
             </Box>
-            <Text fontSize={['20px', '20px', '30px']}>Wedding</Text>
+            <Text fontSize={['20px', '20px', '30px']}>Background Dancer</Text>
             <Text
               fontSize={['12px', '12px', '18px']}
               color="#707070"
               textAlign="center"
             >
-              Blazing fast web hosting for individuals <br />
-              and businesses of all sizes backed by <br />
-              24x7x365 Support.Blazing fast web.
+              If you're someone who's looking at their <br />
+              wedding as nothing short of the award <br />
+              show, we suggest you hire our <br />
+              professional background troupe of performers
             </Text>
           </VStack>
         </Flex>
