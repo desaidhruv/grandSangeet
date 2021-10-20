@@ -49,7 +49,7 @@ function Work() {
               through their sample and work applications sent to us.
             </Text>
           </VStack>
-          <VStack as={Center} pb="20px">
+          <VStack as={Center} pb="150px">
             <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
@@ -74,7 +74,7 @@ function Work() {
               wedding choreography skills like techniques, and experience, etc.
             </Text>
           </VStack>
-          <VStack as={Center} pb="20px">
+          <VStack as={Center} pb="150px">
             <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
@@ -99,7 +99,7 @@ function Work() {
               they might need to improve and make them keen on it.
             </Text>
           </VStack>
-          <VStack as={Center} pb="40px">
+          <VStack as={Center} pb="150px">
             <Image  
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
