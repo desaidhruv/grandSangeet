@@ -96,9 +96,9 @@ export default function Navbar() {
         spacing="20px"
       >
         <Button variant="outline">Home</Button>
-        <Button variant="outline">About us</Button>
-        <Button variant="outline">Gallery</Button>
-        <Button variant="outline">Contact</Button>
+        <Button colorScheme="white">About us</Button>
+        <Button colorScheme="white">Gallery</Button>
+        <Button colorScheme="white">Contact</Button>
       </HStack>
     </Flex>
   );
