@@ -6,19 +6,25 @@ import {
   Text,
   Center,
   Flex,
+  FormControl,
+  FormLabel,
   useDisclosure,
   Modal,
   ModalOverlay,
   ModalContent,
+  Input,
   ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
   HStack,
   Box,
+  Icon,
 } from '@chakra-ui/react';
 import community from '../../assets/photos/community.png';
+import ImageModal from '../../assets/photos/Modal.svg';
 import { Divider } from './Divider';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 function Community() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -34,12 +40,14 @@ function Community() {
         <Flex
           p="40px 0px"
           justify={['stretch', 'stretch', 'stretch', 'space-evenly']}
-          w={['95%', '95%', '95%', '95%']}
+          w={['75%', '80%', '80%', '95%']}
           h="full"
+          
           overflowY="hidden"
           overflowX="auto"
         >
-          <VStack
+          <VStack 
+        
             boxShadow="5px 5px 11px 0px #0000001A"
             w={['121px', '121px', '121px', '290px']}
             h={['298px', '298px', '298px', '477px']}
@@ -185,21 +193,70 @@ function Community() {
           </VStack>
         </Flex>
       </VStack>
-      <Modal size="xl" isOpen={isOpen} onClose={onClose}>
+      <Modal size="5xl" onClose={onClose} isOpen={isOpen}>
         <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            {/* <Lorem count={2} /> */}
-          </ModalBody>
+        <ModalContent fontFamily="Poppins" borderRadius="20px" bg="#FFECF1">
+          <Icon
+            fontSize="40px"
+            color="#F178B6"
+            pos="absolute"
+            right="10px"
+            top="10px"
+            onClick={onClose}
+            cursor="pointer"
+            as={AiOutlineCloseCircle}
+          />
 
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
+          <Text p="20px" as={Center} fontSize="40px">
+            Join our community!
+          </Text>
+          <Flex pt="50px" justify="center" w="full" direction="row">
+            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+              <FormControl w="40%" id="name" pr="20px">
+                <FormLabel color="brand.100">Full Name</FormLabel>
+                <Input placeholder="Name" variant="flushed" type="name" />
+              </FormControl>
+              <FormControl w="40%" id="email">
+                <FormLabel color="brand.100">Email</FormLabel>
+                <Input
+                  placeholder="Email Address"
+                  variant="flushed"
+                  type="email"
+                />
+              </FormControl>
+            </Flex>
+          </Flex>
+          <Flex pt="50px" justify="center" w="full" direction="row">
+            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+              <FormControl w="40%" id="name" pr="20px">
+                <FormLabel color="brand.100">Full Name</FormLabel>
+                <Input placeholder="Name" variant="flushed" type="name" />
+              </FormControl>
+              <FormControl w="40%" id="email">
+                <FormLabel color="brand.100">Email</FormLabel>
+                <Input
+                  placeholder="Email Address"
+                  variant="flushed"
+                  type="email"
+                />
+              </FormControl>
+            </Flex>
+          </Flex>
+          <Box p="50px" as={Center}>
+            <Button bg="#FF3B63" size="l">
+              Join us
             </Button>
-            <Button variant="ghost">Secondary Action</Button>
-          </ModalFooter>
+          </Box>
+          <Box
+            overflow="hidden"
+            pos="absolute"
+            right="0"
+            bottom="0"
+            w="350px"
+            h="350px"
+          >
+            <Image pt="200px" w="100%" h="100%" src={ImageModal} />
+          </Box>
         </ModalContent>
       </Modal>
       <VStack height="300px" w="full" spacing="30px" as={Center}>

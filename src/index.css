@@ -1,7 +1,11 @@
-/* 
-@font-face {
-  font-family: 'MinnadropRegular';
-  src: local('MinnadropRegular'),
-    url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype');
-    font-weight: bold;
-} */
+@font-face {    
+  font-family:'Minnadrop'; 
+  src: url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType'), url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType')
+}
+
+html, body {
+  font-family:'Minnadrop';
+}
+#id{
+  font-family:'Minnadrop';
+}

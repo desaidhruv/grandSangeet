@@ -1,3 +1,8 @@
-.font-face-gm {
-  font-family: 'MinnadropRegular';
+@font-face {    
+  font-family:'Minnadrop'; 
+  src: url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType'), url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType')
+}
+
+html, body {
+  font-family:'Minnadrop';
 }

@@ -5,7 +5,7 @@ const Fonts = () => (
     styles={`
       @font-face {    
         font-family:'Minnadrop'; 
-        src: url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype'), url('./assets/fonts/Minnadrop-Regular.ttf') format('truetype')
+        src: url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType'), url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType')
       }
       `}
   />

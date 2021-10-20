@@ -4,13 +4,31 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import "./index.css"
+const { useEffect } = React;
 
+const loader = document.querySelector('.loader');
+
+// if you want to show the loader when React loads data again
+const showLoader = () => loader.classList.remove('loader--hide');
+
+const hideLoader = () => loader.classList.add('loader--hide');
+
+const TheApp = ({ hideLoader }) => {
+  useEffect(hideLoader, []);
+
+  return (App);
+};
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <App/>
+    {/* <TheApp
+      hideLoader={hideLoader}
+      showLoader={showLoader} 
+      /> */}
   </StrictMode>,
-  document.getElementById('root')
+  document.getElementById('app')
 );
 
 // If you want your app to work offline and load faster, you can change
