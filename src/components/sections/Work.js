@@ -45,8 +45,7 @@ function Work() {
             </Box>
             <Text fontSize="30px">Application</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-              We find the best hand-picked choreographers across pan India
-              through their sample and work applications sent to us.
+              We hand pick the best choreographers across India through their video samples and work experience.
             </Text>
           </VStack>
           <VStack as={Center} pb="150px">
@@ -70,8 +69,7 @@ function Work() {
             </Box>
             <Text fontSize="30px">Audition</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-              Choreographers' auditions would be shortlisted based on their
-              wedding choreography skills like techniques, and experience, etc.
+              Then we conduct an audition for the choreographers and shortlist them based on their choreography styles and techniques.
             </Text>
           </VStack>
           <VStack as={Center} pb="150px">
@@ -95,12 +93,11 @@ function Work() {
             </Box>
             <Text fontSize="30px">Training & Evaluation</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-              Choreographers will get a higher level of training on the skills
-              they might need to improve and make them keen on it.
+              Shortlisted choreographers will be provided training which will boost their skills and enhance them as a choreographer.
             </Text>
           </VStack>
           <VStack as={Center} pb="150px">
-            <Image  
+            <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
               src={arrow} />
@@ -116,8 +113,7 @@ function Work() {
             </Box>
             <Text fontSize="30px">Onboarding/Listing</Text>
             <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-              Our best choreographers with keen skills will be list on board on
-              our website to find the best according to their needs.
+              The best among them will get listed on our website to provide you the bestest sangeet experience.
             </Text>
           </VStack>
         </Flex>
