@@ -21,7 +21,10 @@ import {
   Box,
   Icon,
 } from '@chakra-ui/react';
-import community from '../../assets/photos/community.png';
+import globalScope from '../../assets/photos/global scope.png';
+import mentoring from '../../assets/photos/mentoring.png';
+import businessGrowth from '../../assets/photos/business growth.png';
+import salesTeam from '../../assets/photos/sales team.png';
 import ImageModal from '../../assets/photos/Modal.svg';
 import { Divider } from './Divider';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -42,12 +45,12 @@ function Community() {
           justify={['stretch', 'stretch', 'stretch', 'space-evenly']}
           w={['75%', '80%', '80%', '95%']}
           h="full"
-          
+
           overflowY="hidden"
           overflowX="auto"
         >
-          <VStack 
-        
+          <VStack
+
             boxShadow="5px 5px 11px 0px #0000001A"
             w={['121px', '121px', '121px', '290px']}
             h={['298px', '298px', '298px', '477px']}
@@ -62,13 +65,13 @@ function Community() {
               spacing={['10px', '15px', '18px', '25px']}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={community} />
+                <Image w={['73px', '73px', '73px', 'full']} src={globalScope} />
               </Box>
               <Text
                 fontSize={['12px', '12px', '12px', '24px']}
                 textAlign="center"
               >
-                Sell Everywhere
+                Global Scope
               </Text>
               <Text
                 w="95%"
@@ -76,10 +79,11 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Blazing fast web hosting for <br />
+                Working with grand sangeet will not only get you to experience an exciting challenges but you also get a global exposure of making people move and groove on the dance floor.
+                {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
-                Support.Blazing fast web.
+                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -98,13 +102,13 @@ function Community() {
               spacing={['10px', '15px', '18px', '25px']}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={community} />
+                <Image w={['73px', '73px', '73px', 'full']} src={mentoring} />
               </Box>
               <Text
                 fontSize={['12px', '12px', '12px', '24px']}
                 textAlign="center"
               >
-                Sell Everywhere
+                Mentoring
               </Text>
               <Text
                 w="95%"
@@ -112,10 +116,11 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Blazing fast web hosting for <br />
+                You will get mentored by industry expert which will eventually enhance your expertise.
+                {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
-                Support.Blazing fast web.
+                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -134,13 +139,13 @@ function Community() {
               spacing={['10px', '15px', '18px', '25px']}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={community} />
+                <Image w={['73px', '73px', '73px', 'full']} src={businessGrowth} />
               </Box>
               <Text
                 fontSize={['12px', '12px', '12px', '24px']}
                 textAlign="center"
               >
-                Sell Everywhere
+                Business Growth
               </Text>
               <Text
                 w="95%"
@@ -148,10 +153,11 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Blazing fast web hosting for <br />
+                Working with us gives you an  opportunity of getting a lot of clients and an increase in revenue. Because you become a part of highly motivated team.
+                {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
-                Support.Blazing fast web.
+                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -170,13 +176,13 @@ function Community() {
               spacing={['10px', '15px', '18px', '25px']}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={community} />
+                <Image w={['73px', '73px', '73px', 'full']} src={salesTeam} />
               </Box>
               <Text
                 fontSize={['12px', '12px', '12px', '24px']}
                 textAlign="center"
               >
-                Sell Everywhere
+                Sales Team
               </Text>
               <Text
                 w="95%"
@@ -184,10 +190,11 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Blazing fast web hosting for <br />
+                Grand sangeet offers you a personalized sales team who are highly trained in bringing the best deal on the table by understanding the clients need.
+                {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
-                Support.Blazing fast web.
+                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>

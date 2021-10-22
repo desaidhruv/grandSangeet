@@ -14,7 +14,8 @@ import { Divider } from './Divider';
 
 function About() {
   return (
-    <VStack pt="80px" pb="30px" as={Center}>
+    <>
+    <VStack pt="80px" pb="40px" as={Center}>
       <Text fontFamily="Poppins" fontSize={['36px', '36px', '48px']} fontWeight="bold" />
       <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
         About Us
@@ -54,9 +55,8 @@ function About() {
             <Image src={origin} />
           </Box>
           <Text fontSize="30px">Origin</Text>
-          <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-            Blazing fast web hosting for individuals and businesses of all
-            sizes backed by 24x7x365 Support.Blazing fast web.
+          <Text w="300px" fontSize="16px" color="#707070" textAlign="center">
+            Grand sangeet originated from the idea of building a community for the best wedding choreographers with a common mission of delivering the bestest sangeet experience like never before.
           </Text>
         </VStack>
         <VStack>
@@ -72,8 +72,7 @@ function About() {
           </Box>
           <Text fontSize="30px">Mission</Text>
           <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-            Blazing fast web hosting for individuals and businesses of all
-            sizes backed by 24x7x365 Support.Blazing fast web.
+            Grand Sangeet's mission Is to Provide best service to the clients & to empower millions of wedding Choreographers worldwide.
           </Text>
         </VStack>
         <VStack>
@@ -89,13 +88,13 @@ function About() {
           </Box>
           <Text fontSize="30px">Vision</Text>
           <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-            Blazing fast web hosting for individuals and businesses of all
-            sizes backed by 24x7x365 Support.Blazing fast web.
+            Our vision is to bring quality, standardization and transparency in the wedding choreography industry   to create a positive and exciting sangeet environment for all the families across the globe.
           </Text>
         </VStack>
       </Flex>
-      <Divider />
     </VStack>
+      <Divider />
+    </>
   );
 }
 
