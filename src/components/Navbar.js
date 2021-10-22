@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <Flex pt="20px" pb="20px" pl="40px" justify="space-between" pr="40px">
       <Box zIndex="1" as={Center}>
-        <Image h="84px" w="78px" src={logo} />
+        <Image h={["64px","64px","84px"]} w={["58px","58px","78px"]}  src={logo} />
       </Box>
 
       <Spacer />

@@ -12,6 +12,7 @@ import {
 import React from 'react';
 import Navbar from '../Navbar';
 import bggif from '../../assets/photos/bggif.gif';
+import bgmob from '../../assets/photos/bgmob.gif';
 import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
@@ -21,7 +22,7 @@ export default function Hero() {
   return (
     <>
       <Box
-        backgroundImage={bggif}
+        backgroundImage={[bgmob,bggif,bggif,bggif]}
         backgroundRepeat="no-repeat"
         backgroundPosition="center"
         backgroundSize="cover"
