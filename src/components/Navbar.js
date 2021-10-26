@@ -95,10 +95,10 @@ export default function Navbar() {
         color="white"
         spacing="20px"
       >
-        <Button variant="outline">Home</Button>
-        <Button colorScheme="white">About us</Button>
-        <Button colorScheme="white">Gallery</Button>
-        <Button colorScheme="white">Contact</Button>
+        <Button  variant="outline" >Home</Button>
+        <Button as={Link} colorScheme="white" href="#about">About us</Button>
+        <Button as={Link} colorScheme="white" href="#gallery">Gallery</Button>
+        <Button as={Link} colorScheme="white" href="#contact">Contact</Button>
       </HStack>
     </Flex>
   );

@@ -79,7 +79,7 @@ export const WhyWeAre = () => {
         as={Center}
         pt="50px"
         fontSize={['20px', '20px', '38px']}
-        fontWeight="bold"
+        className="fontClass"
       >
         Why we are?
       </Text>

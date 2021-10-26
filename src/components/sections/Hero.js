@@ -8,15 +8,16 @@ import {
   Icon,
   Flex,
   Spacer,
+  Image
 } from '@chakra-ui/react';
 import React from 'react';
 import Navbar from '../Navbar';
 import bggif from '../../assets/photos/bggif.gif';
+import heroArrow from '../../assets/photos/hero arrow.png';
 import bgmob from '../../assets/photos/bgmob.gif';
 import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
-import { FaArrowDown } from 'react-icons/fa';
 import '../../App.css';
 export default function Hero() {
   return (
@@ -49,7 +50,7 @@ export default function Hero() {
           <Box></Box>
           <Spacer />
           <VStack spacing="20px">
-            <Text fontSize={["46px","40px","96px"]} zIndex="2" fontWeight="semibold">
+            <Text fontSize={["46px","40px","96px"]} zIndex="2" className="fontClass">
               Grand Sangeet
             </Text>
             <Text
@@ -70,11 +71,7 @@ export default function Hero() {
           <Spacer />
 
           <Box justifyContent="end" className="arrow bounce">
-            <Icon
-              as={FaArrowDown}
-              className="fa fa-arrow-down fa-2x"
-              fontSize="50px"
-            />
+            <Image src = {heroArrow}/>
           </Box>
         </Flex>
       </Box>

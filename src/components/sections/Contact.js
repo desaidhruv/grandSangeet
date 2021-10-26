@@ -18,18 +18,19 @@ import { Divider } from './Divider';
 import mailIcon from '../../assets/photos/mailIcon.svg';
 import location from '../../assets/photos/location.svg';
 import phone from '../../assets/photos/phone.svg';
+import contact from '../../assets/photos/contact.png';
 
 export default function Contact() {
   return (
-    <Box fontFamily="Poppins" w="full">
+    <Box fontFamily="Poppins" w="full" id="contact">
       <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">
         Contact us
       </Text>
       <Flex as={Center} pb="30px">
         <VStack
           // w="50%"
-          w="80%"
-          // as={Center}
+          w="50%"
+          as={Center}
         >
           <Flex
             direction={['column', 'column', 'column', 'row']}
@@ -118,21 +119,23 @@ export default function Contact() {
             >
               <VStack spacing="10px">
                 <Image src={mailIcon} />
-                <Text>Grandsangeet@support.com</Text>
+                <Text>Support@grandsangeet.com</Text>
               </VStack>
               <VStack spacing="10px">
                 <Image src={location} />
-                <Text>345 Hill Ave. Nashville, TN 37210, Mumbai: 784945</Text>
+                <Text>Prabhat lane, duttatota, puri, odisha, 752001</Text>
               </VStack>
               <VStack spacing="10px">
                 <Image src={phone} />
-                <Text>+91 895 8546 985 ,+91 547 5846 934</Text>
+                <Text>+91 7327819258 ,+91 8328856530</Text>
               </VStack>
             </Flex>
           </Box>
         </VStack>
 
-        {/* <Box w="50%"></Box> */}
+        {/* <Box w="50%">
+          <Image src={contact}/>
+        </Box> */}
       </Flex>
       <Divider />
     </Box>

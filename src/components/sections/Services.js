@@ -30,9 +30,9 @@ function Services() {
 
           p="20px"
           fontSize={['20px', '20px', '36px']}
-          fontWeight="bold"
+          className="fontClass"
         >
-          Services We Provide
+          Additional Services
         </Text>
 
         {/* <Image position={'absolute'} back zIndex={'-1'} h="240px" src={serviceLine} /> */}
@@ -53,26 +53,27 @@ function Services() {
               bg={'white'}
               as={Center}
             >
-              <Image src={choreographer} />
+              <Image src={dancer} />
             </Box>
-            <Text fontSize={['20px', '20px', '30px']}>Choreographer</Text>
+            <Text fontSize={['20px', '20px', '30px']}>Background Dancer</Text>
             <Text
               fontSize={['12px', '12px', '18px']}
               color="#707070"
               textAlign="center"
             >
-              We know you're bored by the traditional <br />
-              background visuals that's why we <br />
-              suggest you to customise your dance <br />
-              performance with our visuals and props <br />
-              to make your performance look special <br />
-              and extraordinary.
-              {/* We provide wedding choreographers <br />
-              who know how to glam up your sangeet <br />
-              night and if you're looking for a lot of <br />
-              masti, then you're at the right place. */}
+              {/* If you're someone who's looking at their <br />
+              wedding as nothing short of the award <br />
+              show, we suggest you hire our <br />
+              professional background troupe of performers */}
+              Are you someone who dreams of their sangeet to  <br />
+              be nothing less than an award show? Our <br />
+              background troupe of performers are trained <br />
+              to make you appear like a star and that will <br />
+              definitely leave your padosis and ristedars <br />
+              Star-struck!
             </Text>
           </VStack>
+          
           <VStack>
             <Box
               w={'180px'}
@@ -105,24 +106,24 @@ function Services() {
               bg={'white'}
               as={Center}
             >
-              <Image src={dancer} />
+              <Image src={choreographer} />
             </Box>
-            <Text fontSize={['20px', '20px', '30px']}>Background Dancer</Text>
+            <Text fontSize={['20px', '20px', '30px']}>Visuals and props</Text>
             <Text
               fontSize={['12px', '12px', '18px']}
               color="#707070"
               textAlign="center"
             >
-              {/* If you're someone who's looking at their <br />
-              wedding as nothing short of the award <br />
-              show, we suggest you hire our <br />
-              professional background troupe of performers */}
-              Are you someone who dreams of their to be <br />
-              nothing less than an award show? Our <br />
-              background troupe of performers are trained <br />
-              to make you appear like a star and that will <br />
-              definitely leave your padosis and ristedars <br />
-              Star-struck!
+              We know you're bored by the traditional <br />
+              background visuals that's why we <br />
+              suggest you to customise your dance <br />
+              performance with our visuals and props <br />
+              to make your performance look special <br />
+              and extraordinary.
+              {/* We provide wedding choreographers <br />
+              who know how to glam up your sangeet <br />
+              night and if you're looking for a lot of <br />
+              masti, then you're at the right place. */}
             </Text>
           </VStack>
         </Flex>

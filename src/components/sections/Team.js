@@ -11,12 +11,16 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import Rohan from '../../assets/photos/Rohan.png';
+import Dhruv from '../../assets/photos/dhruv.png';
+import Sakshi from '../../assets/photos/sakshi.png';
+import Keval from '../../assets/photos/keval.png';
+import Tushar from '../../assets/photos/tushar.png';
 import { Divider } from './Divider';
 
 function Team() {
   return (
     <VStack as={Center} spacing="35px" p="40px 0px 40px">
-      <Text fontSize={['24px', '38px', '48px']}>Meet Our Team</Text>
+      <Text fontSize={['24px', '38px', '48px']} className="fontClass">Meet Our Team</Text>
       <Flex
         justify={['stretch', 'stretch', 'stretch', 'space-evenly']}
         w={['95%', '95%', '95%', '90%']}
@@ -25,7 +29,7 @@ function Team() {
       >
         <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
-            <Image src={Rohan} />
+            <Image src={Tushar} />
             <Box
               as={Flex}
               justifyContent="center"
@@ -59,14 +63,14 @@ function Team() {
               </Text>
             </Box>
           </Box>
-          <Text fontSize={['12px', '12px', '24px']}>Rohan Pharek</Text>
+          <Text fontSize={['12px', '12px', '24px']}>Tushar Jain</Text>
           <Text color="#464646" fontSize={['9px', '9px', '16px']}>
-            Rohan Pharek
+            Founder & CEO
           </Text>
         </VStack>
         <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
-            <Image src={Rohan} />
+            <Image src={Dhruv} />
             <Box
               as={Flex}
               justifyContent="center"
@@ -100,14 +104,14 @@ function Team() {
               </Text>
             </Box>
           </Box>
-          <Text fontSize={['12px', '12px', '24px']}>Rohan Pharek</Text>
+          <Text fontSize={['12px', '12px', '24px']}>Dhruv Desai</Text>
           <Text color="#464646" fontSize={['9px', '9px', '16px']}>
-            Rohan Pharek
+            Freelancer
           </Text>
         </VStack>
         <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
-            <Image src={Rohan} />
+            <Image src={Sakshi} />
             <Box
               as={Flex}
               justifyContent="center"
@@ -141,14 +145,14 @@ function Team() {
               </Text>
             </Box>
           </Box>
-          <Text fontSize={['12px', '12px', '24px']}>Rohan Pharek</Text>
+          <Text fontSize={['12px', '12px', '24px']}>Sakshi Parikh</Text>
           <Text color="#464646" fontSize={['9px', '9px', '16px']}>
-            Rohan Pharek
+            Freelancer
           </Text>
         </VStack>
         <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
-            <Image src={Rohan} />
+            <Image src={Keval} />
             <Box
               as={Flex}
               justifyContent="center"
@@ -182,9 +186,9 @@ function Team() {
               </Text>
             </Box>
           </Box>
-          <Text fontSize={['12px', '12px', '24px']}>Rohan Pharek</Text>
+          <Text fontSize={['12px', '12px', '24px']}>Keval Panchal</Text>
           <Text color="#464646" fontSize={['9px', '9px', '16px']}>
-            Rohan Pharek
+            Freelancer
           </Text>
         </VStack>
       </Flex>

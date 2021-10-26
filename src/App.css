@@ -5,4 +5,8 @@
 
 html, body {
   font-family:'Minnadrop';
+  scroll-behavior: smooth;
+}
+.fontClass {
+  font-family:'Minnadrop';
 }

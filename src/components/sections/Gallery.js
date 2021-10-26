@@ -31,7 +31,7 @@ import './gallery.css';
 export default function Gallery() {
   return (
     <>
-      <Flex direction="column" spacing="15px" as={Center} h="800px">
+      <Flex direction="column" spacing="15px" as={Center} h="800px" id="gallery">
         <Text fontSize="36px" fontWeight="medium">
           Gallery
         </Text>
@@ -225,9 +225,9 @@ export default function Gallery() {
             </TabPanel>
           </TabPanels>
         </Tabs>
-        <Button color="white" bgColor="brand.100" size="lg">
+        {/* <Button color="white" bgColor="brand.100" size="lg">
           View More
-        </Button>
+        </Button> */}
       </Flex>
       <Divider />
     </>
