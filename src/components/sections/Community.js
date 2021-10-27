@@ -222,12 +222,12 @@ function Community() {
             <Flex direction="row" w="60%" as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Full Name</FormLabel>
-                <Input placeholder="Name" variant="flushed" type="name" />
+                <Input placeholder="Enter your name" variant="flushed" type="name" />
               </FormControl>
               <FormControl w="40%" id="email">
                 <FormLabel color="brand.100">Email</FormLabel>
                 <Input
-                  placeholder="Email"
+                  placeholder="johndoe@gmail.com"
                   variant="flushed"
                   type="email"
                 />
@@ -238,12 +238,12 @@ function Community() {
             <Flex direction="row" w="60%" as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Phone Number</FormLabel>
-                <Input placeholder="Number" variant="flushed" type="name" />
+                <Input placeholder="e.g. 999-999-9999" variant="flushed" type="name" />
               </FormControl>
               <FormControl w="40%" id="email">
                 <FormLabel color="brand.100">Social Media Link</FormLabel>
                 <Input
-                  placeholder="URL"
+                  placeholder="https//portfolio.com"
                   variant="flushed"
                   type="email"
                 />
@@ -274,10 +274,6 @@ function Community() {
         <HStack spacing="30px">
           <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg">
             Join us
-          </Button>
-          <Button variant="outline" size="lg" color="brand.100">
-            {' '}
-            Learn more
           </Button>
         </HStack>
       </VStack>
