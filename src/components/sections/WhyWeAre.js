@@ -81,7 +81,7 @@ export const WhyWeAre = () => {
         fontSize={['20px', '20px', '38px']}
         className="fontClass"
       >
-        Why we are?
+        What you get?
       </Text>
 
       <Box position="relative" p="50px 0px 50px">

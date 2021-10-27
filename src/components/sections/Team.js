@@ -27,7 +27,7 @@ function Team() {
         overflowY="hidden"
         overflowX="auto"
       >
-        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
+        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']} mr={['20px', '0', '0', '0']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
             <Image src={Tushar} />
             <Box
@@ -68,7 +68,7 @@ function Team() {
             Founder & CEO
           </Text>
         </VStack>
-        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
+        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']} mr={['20px', '0', '0', '0']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
             <Image src={Dhruv} />
             <Box
@@ -109,7 +109,7 @@ function Team() {
             Freelancer
           </Text>
         </VStack>
-        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
+        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']} mr={['20px', '0', '0', '0']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
             <Image src={Sakshi} />
             <Box
@@ -150,7 +150,7 @@ function Team() {
             Freelancer
           </Text>
         </VStack>
-        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']}>
+        <VStack w={['205px', '205px', '275px']} h={['280px', '300px', '380px']} mr={['20px', '0', '0', '0']}>
           <Box cursor="pointer" w="inherit" role="group" position="relative">
             <Image src={Keval} />
             <Box

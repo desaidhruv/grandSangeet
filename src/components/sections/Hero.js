@@ -61,8 +61,7 @@ export default function Hero() {
               w={["80%","100%"]}
               h="65px"
             >
-              Blazing fast web hosting for individuals  and businesses of all
-              <br /> sizes backed by 24x7x365 Support.
+              India's favourite wedding choreogaphy brand.
             </Text>
             <Button fontFamily="Poppins" fontWeight="normal" fontSize={["14px","14px","20px"]}   bg="brand.100" w={["120px","200px","200px"]} h={["40px","60px",'60px']} >
               Book now
