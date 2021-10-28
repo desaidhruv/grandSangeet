@@ -12,9 +12,9 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import Navbar from '../Navbar';
-import bggif from '../../assets/photos/gs.mp4';
+import bggif from '../../assets/photos/bggif.gif';
 import heroArrow from '../../assets/photos/hero arrow.png';
-import bgmob from '../../assets/photos/gs1.mp4';
+import bgmob from '../../assets/photos/bgmob.gif';
 import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
@@ -23,11 +23,10 @@ export default function Hero() {
   return (
     <>
       <Box
-      
-        // backgroundImage={[bgmob,bggif,bggif,bggif]}
-        // backgroundRepeat="no-repeat"
-        // backgroundPosition="center"
-        // backgroundSize="cover"
+        backgroundImage={[bgmob,bggif,bggif,bggif]}
+        backgroundRepeat="no-repeat"
+        backgroundPosition="center"
+        backgroundSize="cover"
         w="full"
         h="100vh"
         pos="relative"

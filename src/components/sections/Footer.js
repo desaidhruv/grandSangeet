@@ -58,7 +58,7 @@ export default function Footer() {
             Grand Sangeet
           </Text>
           <Spacer />
-          <Stack display={["none",'none',"flex","flex"]} direction={'row'} spacing={6}>
+          <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Facebook'} href={'#'} bgColor="white">
               <FaFacebook />
             </SocialButton>
@@ -79,7 +79,7 @@ export default function Footer() {
         <Text pr="20px">
           Terms
         </Text>
-        <Text >
+        <Text>
           Privacy Policy
         </Text>
       </Flex>

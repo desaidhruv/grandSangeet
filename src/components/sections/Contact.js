@@ -26,19 +26,10 @@ export default function Contact() {
       <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">
         Contact us
       </Text>
-      <Flex
-        justifyContent="space-evenly"
-        direction="row"
-        // justifyContent="center"
-        alignItems="center"
-        w="inherit"
-        // border="2px solid yellow"
-        as={Center}
-        pb="30px"
-      >
+      <Flex as={Center} pb="30px">
         <VStack
-          w={["80%","80%","50%"]}
           // w="50%"
+          w="50%"
           as={Center}
         >
           <Flex
@@ -96,7 +87,7 @@ export default function Contact() {
               Send message
             </Button>
           </Flex>
-          <Box bgColor="#FFF8F9" borderRadius="18px" p="20px" w="full">
+          <Box  bgColor="#FFF8F9" borderRadius="18px" p="20px" w="full" >
             <Flex flexDir="column" w="full">
               <Text
                 as={Center}
@@ -118,40 +109,33 @@ export default function Contact() {
             </Flex>
             <Flex
               justify="center"
-              // h="400px"
-              pt="50px"
-              w="inherit"
-              // border="2px solid red"
+              h="400px"
               justify="space-evenly"
               direction={['column', 'column', 'column', 'row']}
               // justifyContent="space-between"
               // as={Center}
               // align="center"
               // w="80%"
-              fontSize="13px"
-              as={Center}
             >
-              <VStack w={["80%","30%"]}  spacing="10px">
+              <VStack spacing="10px">
                 <Image src={mailIcon} />
-                <Text textAlign="center">Support@grandsangeet.com</Text>
+                <Text>Support@grandsangeet.com</Text>
               </VStack>
-              <VStack  w={["80%","30%"]} spacing="10px">
+              <VStack spacing="10px">
                 <Image src={location} />
-                <Text textAlign="center">
-                  Prabhat lane, duttatota, puri, odisha, 752001
-                </Text>
+                <Text>Prabhat lane, duttatota, puri, odisha, 752001</Text>
               </VStack>
-              <VStack w={["80%","30%"]} spacing="10px">
+              <VStack spacing="10px">
                 <Image src={phone} />
-                <Text textAlign="center">+91 7327819258, +91 8328856530</Text>
+                <Text>+91 7327819258 ,+91 8328856530</Text>
               </VStack>
             </Flex>
           </Box>
         </VStack>
 
-        <Box display={['none', 'none', 'flex', 'flex']}>
-          <Image src={contact} />
-        </Box>
+        {/* <Box w="50%">
+          <Image src={contact}/>
+        </Box> */}
       </Flex>
       <Divider />
     </Box>
