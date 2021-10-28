@@ -32,8 +32,8 @@ export default function Hero() {
         h="100vh"
         pos="relative"
       >
-        <video> 
-          
+        {/* <video>    */}
+
         <Box
           w="full"
           bg="black"
