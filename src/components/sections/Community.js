@@ -251,7 +251,7 @@ function Community() {
             </Flex>
           </Flex>
           <Box p="50px" as={Center}>
-            <Button bg="#FF3B63" size="l">
+            <Button bg="#FF3B63" size="l" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
               Join us
             </Button>
           </Box>
@@ -272,7 +272,7 @@ function Community() {
           Join our community <br /> to help you grow as choreographers.
         </Text>
         <HStack spacing="30px">
-          <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg">
+          <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
             Join us
           </Button>
         </HStack>
