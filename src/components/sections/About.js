@@ -15,84 +15,73 @@ import { Divider } from './Divider';
 function About() {
   return (
     <>
-    <VStack pt="80px" pb="40px" as={Center}>
-      <Text fontFamily="Poppins" fontSize={['36px', '36px', '48px']} fontWeight="bold" />
-      <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
-        About Us
-      </Text>
-      <Flex pt="20px" direction={["column", "row"]} as={Center}>
-        <svg
-          width="44"
-          height="40"
-          viewBox="0 0 84 78"
-          fill="#FF3B63"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M70.5612 13.4291C67.39 10.291 63.1762 8.57153 58.7017 8.57153C54.2273 8.57153 50.0134 10.291 46.8422 13.4291L43.4538 16.7821L46.6685 19.9632L50.0569 16.6102C52.3593 14.3318 55.4436 13.0422 58.7017 13.0422C61.9598 13.0422 65.0442 14.2889 67.3466 16.6102C69.649 18.8885 70.9522 21.9406 70.9522 25.1647C70.9522 28.3887 69.6924 31.4408 67.3466 33.7192L62.5246 38.4908L37.1982 13.4291C34.027 10.291 29.8132 8.57153 25.3387 8.57153C20.8642 8.57153 16.6504 10.291 13.4792 13.4291C10.308 16.5672 8.57031 20.737 8.57031 25.1647C8.57031 29.4634 10.2211 33.5042 13.2185 36.6423L16.4332 33.4612C14.3046 31.1829 13.1317 28.2598 13.1317 25.1647C13.1317 21.9406 14.3915 18.8885 16.6939 16.6102C18.9963 14.3318 22.0806 13.0422 25.3387 13.0422C28.4665 13.0422 31.4639 14.2029 33.7229 16.3093C33.8098 16.3952 35.1999 17.7708 35.1999 17.7708L14.6956 38.1039L42.0202 65.143L56.8772 50.4413L43.4103 37.1152L40.1957 40.2962L50.4479 50.4413L42.0202 58.7808L21.0814 38.1039L38.4146 20.9519L62.5246 44.8099L70.5178 36.9002C73.689 33.7622 75.4267 29.5924 75.4267 25.1647C75.4701 20.737 73.689 16.5672 70.5612 13.4291Z"
-            fill="#FF3B63"
-          />
-          <path
-            d="M42 78L7.47239 43.5239C2.66257 38.7213 0 32.2892 0 25.514C0 18.696 2.66257 12.3068 7.47239 7.50412C12.2822 2.6586 18.681 0 25.5092 0C31.6074 0 37.362 2.10115 42 6.0033C46.5951 2.10115 52.3926 0 58.4908 0C65.319 0 71.7178 2.6586 76.5276 7.46124C81.3374 12.2639 84 18.696 84 25.4711C84 32.2892 81.3374 38.6784 76.5276 43.481L42 78ZM25.5092 4.45959C19.8834 4.45959 14.6012 6.64651 10.6074 10.6344C6.6135 14.6223 4.46626 19.8966 4.46626 25.514C4.46626 31.1314 6.65644 36.4057 10.6503 40.3936L42 71.6965L73.3497 40.3936C77.3436 36.4057 79.5337 31.1314 79.5337 25.514C79.5337 19.8966 77.3436 14.6223 73.3497 10.6344C69.3558 6.64651 64.0736 4.45959 58.4478 4.45959C52.8221 4.45959 47.5399 6.64651 43.546 10.6344L41.9571 12.221L40.3681 10.6344C36.4172 6.64651 31.135 4.45959 25.5092 4.45959Z"
-            fill="#FF3B63"
-          />
-        </svg>
-        <Text pl="20px" fontSize="36px" color="#FF3B63">
-          Grand Sangeet
+      <VStack pt="80px" pb="40px" as={Center} id="about">
+        <Text fontFamily="Poppins" fontSize={['36px', '36px', '48px']} fontWeight="bold" />
+        <Text fontSize={['26px', '26px', '48px']} fontWeight="medium">
+          About Us
         </Text>
-      </Flex>
+        <Flex pt="20px" direction={["column", "row"]} as={Center}>
+          <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M36.9597 7.03419C35.2986 5.39043 33.0914 4.48975 30.7476 4.48975C28.4038 4.48975 26.1966 5.39043 24.5355 7.03419L22.7606 8.79053L24.4444 10.4568L26.2193 8.70047C27.4254 7.50705 29.041 6.83154 30.7476 6.83154C32.4542 6.83154 34.0698 7.48454 35.2758 8.70047C36.4819 9.89388 37.1645 11.4926 37.1645 13.1814C37.1645 14.8702 36.5046 16.4689 35.2758 17.6623L32.75 20.1617L19.4839 7.03419C17.8227 5.39043 15.6155 4.48975 13.2717 4.48975C10.928 4.48975 8.72072 5.39043 7.0596 7.03419C5.39848 8.67795 4.48828 10.8621 4.48828 13.1814C4.48828 15.4331 5.35297 17.5497 6.92307 19.1935L8.60694 17.5272C7.49195 16.3338 6.87756 14.8026 6.87756 13.1814C6.87756 11.4926 7.53746 9.89388 8.74347 8.70047C9.94949 7.50705 11.5651 6.83154 13.2717 6.83154C14.9101 6.83154 16.4802 7.4395 17.6634 8.54284C17.709 8.58788 18.4371 9.30843 18.4371 9.30843L7.69674 19.9591L22.0097 34.1224L29.7919 26.4215L22.7378 19.4412L21.0539 21.1075L26.4241 26.4215L22.0097 30.7899L11.0417 19.9591L20.121 10.9747L32.75 23.4718L36.937 19.3286C38.5981 17.6848 39.5083 15.5007 39.5083 13.1814C39.531 10.8621 38.5981 8.67795 36.9597 7.03419Z" fill="#FF3B63" />
+            <path d="M22 40.8571L3.91411 22.7982C1.39468 20.2826 0 16.9134 0 13.3645C0 9.79314 1.39468 6.4464 3.91411 3.93073C6.43354 1.3926 9.78528 0 13.362 0C16.5562 0 19.5706 1.1006 22 3.14459C24.407 1.1006 27.4438 0 30.638 0C34.2147 0 37.5665 1.3926 40.0859 3.90827C42.6053 6.42394 44 9.79314 44 13.342C44 16.9134 42.6053 20.2601 40.0859 22.7758L22 40.8571ZM13.362 2.33598C10.4151 2.33598 7.64826 3.4815 5.55624 5.57041C3.46421 7.65931 2.33947 10.4221 2.33947 13.3645C2.33947 16.3069 3.48671 19.0697 5.57873 21.1586L22 37.5553L38.4213 21.1586C40.5133 19.0697 41.6605 16.3069 41.6605 13.3645C41.6605 10.4221 40.5133 7.65931 38.4213 5.57041C36.3292 3.4815 33.5624 2.33598 30.6155 2.33598C27.6687 2.33598 24.9018 3.4815 22.8098 5.57041L21.9775 6.40148L21.1452 5.57041C19.0757 3.4815 16.3088 2.33598 13.362 2.33598Z" fill="#FFD2DD" />
+          </svg>
 
-      <Flex fontFamily="Poppins" pt="20px" justify="space-evenly" w="full" h={['1200px', '1200px', 'full', "full"]} direction={['column', 'column', 'column', 'row']}>
-        <VStack>
-          <Box
-            w={['165px', '165px', '180px']}
-            h={['160px', '160px', '230px']}
-            boxShadow="5px 5px 11px 0px #0000001A"
-            rounded={'17px'}
-            bg={'white'}
-            as={Center}
-          >
-            <Image src={origin} />
-          </Box>
-          <Text fontSize="30px">Origin</Text>
-          <Text w="300px" fontSize="16px" color="#707070" textAlign="center">
-            Grand sangeet originated from the idea of building a community for the best wedding choreographers with a common mission of delivering the bestest sangeet experience like never before.
+          <Text pl="20px" fontSize={['24px', '24px', '36px']} color="#FF3B63" className="fontClass">
+            Grand Sangeet
           </Text>
-        </VStack>
-        <VStack>
-          <Box
-            w={['165px', '165px', '180px']}
-            h={['160px', '160px', '230px']}
-            boxShadow="5px 5px 11px 0px #0000001A"
-            rounded={'17px'}
-            bg={'white'}
-            as={Center}
-          >
-            <Image src={mission} />
-          </Box>
-          <Text fontSize="30px">Mission</Text>
-          <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-            Grand Sangeet's mission Is to Provide best service to the clients & to empower millions of wedding Choreographers worldwide.
-          </Text>
-        </VStack>
-        <VStack>
-          <Box
-            w={['165px', '165px', '180px']}
-            h={['160px', '160px', '230px']}
-            boxShadow="5px 5px 11px 0px #0000001A"
-            rounded={'17px'}
-            bg={'white'}
-            as={Center}
-          >
-            <Image src={vision} />
-          </Box>
-          <Text fontSize="30px">Vision</Text>
-          <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
-            Our vision is to bring quality, standardization and transparency in the wedding choreography industry   to create a positive and exciting sangeet environment for all the families across the globe.
-          </Text>
-        </VStack>
-      </Flex>
-    </VStack>
+        </Flex>
+
+        <Flex fontFamily="Poppins" pt="20px" justify="space-evenly" w="full" h={['1200px', '1200px', 'full', "full"]} direction={['column', 'column', 'column', 'row']}>
+          <VStack>
+            <Box
+              w={['165px', '165px', '180px']}
+              h={['160px', '160px', '230px']}
+              boxShadow="5px 5px 11px 0px #0000001A"
+              rounded={'17px'}
+              bg={'white'}
+              as={Center}
+            >
+              <Image src={origin} />
+            </Box>
+            <Text fontSize="30px">Origin</Text>
+            <Text w="300px" fontSize="16px" color="#707070" textAlign="center">
+              Grand sangeet originated from the idea of building a community for the best wedding choreographers with a common mission of delivering the bestest sangeet experience like never before.
+            </Text>
+          </VStack>
+          <VStack>
+            <Box
+              w={['165px', '165px', '180px']}
+              h={['160px', '160px', '230px']}
+              boxShadow="5px 5px 11px 0px #0000001A"
+              rounded={'17px'}
+              bg={'white'}
+              as={Center}
+            >
+              <Image src={mission} />
+            </Box>
+            <Text fontSize="30px">Mission</Text>
+            <Text w="300px" fontSize="18px" color="#707070" textAlign="center">
+              Grand Sangeet's mission Is to Provide best service to the clients & to empower millions of wedding Choreographers worldwide.
+            </Text>
+          </VStack>
+          <VStack>
+            <Box
+              w={['165px', '165px', '180px']}
+              h={['160px', '160px', '230px']}
+              boxShadow="5px 5px 11px 0px #0000001A"
+              rounded={'17px'}
+              bg={'white'}
+              as={Center}
+            >
+              <Image src={vision} />
+            </Box>
+            <Text fontSize="30px">Vision</Text>
+            <Text w="300px" fontSize="17px" color="#707070" textAlign="center">
+              Our vision is to bring quality, standardization and transparency in the wedding choreography industry   to create a positive and exciting sangeet environment for all the families across the globe.
+            </Text>
+          </VStack>
+        </Flex>
+      </VStack>
       <Divider />
     </>
   );

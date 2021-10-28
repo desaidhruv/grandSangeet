@@ -34,7 +34,7 @@ function Community() {
   return (
     <>
       <VStack as={Center} spacing={['5px', '10px', '40px', '45px']}>
-        <Text fontSize={['24px', '24px', '32px', '36px']} fontWeight="medium">
+        <Text fontSize={['24px', '24px', '32px', '36px']} className="fontClass">
           Join our community!
         </Text>
         <Text fontSize={['20px', '20px', '32px', '33px']} fontWeight="bold">
@@ -116,7 +116,8 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                You will get mentored by industry expert which will eventually enhance your expertise.
+                You will get mentored by industry experts which will eventually enhance your expertise and
+                will lead you to the path of become a successful wedding choreographer.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -153,7 +154,7 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Working with us gives you an  opportunity of getting a lot of clients and an increase in revenue. Because you become a part of highly motivated team.
+                Working with us gives you an  opportunity of getting a lot of clients and an increase in revenue. Because you become a part of a highly motivated team.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -221,12 +222,12 @@ function Community() {
             <Flex direction="row" w="60%" as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Full Name</FormLabel>
-                <Input placeholder="Name" variant="flushed" type="name" />
+                <Input placeholder="Enter your name" variant="flushed" type="name" />
               </FormControl>
               <FormControl w="40%" id="email">
                 <FormLabel color="brand.100">Email</FormLabel>
                 <Input
-                  placeholder="Email Address"
+                  placeholder="johndoe@gmail.com"
                   variant="flushed"
                   type="email"
                 />
@@ -236,13 +237,13 @@ function Community() {
           <Flex pt="50px" justify="center" w="full" direction="row">
             <Flex direction="row" w="60%" as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
-                <FormLabel color="brand.100">Full Name</FormLabel>
-                <Input placeholder="Name" variant="flushed" type="name" />
+                <FormLabel color="brand.100">Phone Number</FormLabel>
+                <Input placeholder="e.g. 999-999-9999" variant="flushed" type="name" />
               </FormControl>
               <FormControl w="40%" id="email">
-                <FormLabel color="brand.100">Email</FormLabel>
+                <FormLabel color="brand.100">Social Media Link</FormLabel>
                 <Input
-                  placeholder="Email Address"
+                  placeholder="https//portfolio.com"
                   variant="flushed"
                   type="email"
                 />
@@ -273,10 +274,6 @@ function Community() {
         <HStack spacing="30px">
           <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg">
             Join us
-          </Button>
-          <Button variant="outline" size="lg" color="brand.100">
-            {' '}
-            Learn more
           </Button>
         </HStack>
       </VStack>

@@ -20,7 +20,7 @@ function Work() {
   return (
     <>
       <VStack pt="80px" as={Center}>
-        <Text fontSize={['26px', '26px', '48px']} pb="40px" fontWeight="medium">
+        <Text fontSize={['26px', '26px', '48px']} pb="40px" className="fontClass">
           How Grand Sangeet work?
         </Text>
         <Flex
@@ -45,7 +45,7 @@ function Work() {
               video samples and work experience.
             </Text>
           </VStack>
-          <VStack as={Center} pb={['60px', '60px', '150px', '150px']}>
+          <VStack as={Center} pb={['60px', '60px', '190px', '190px']}>
             <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
@@ -66,7 +66,7 @@ function Work() {
               them based on their choreography styles and techniques.
             </Text>
           </VStack>
-          <VStack as={Center} pb={['60px', '60px', '150px', '150px']}>
+          <VStack as={Center} pb={['60px', '60px', '190px', '190px']}>
             <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
@@ -87,7 +87,7 @@ function Work() {
               boost their skills and enhance them as a choreographer.
             </Text>
           </VStack>
-          <VStack as={Center} pb={['60px', '60px', '150px', '150px']}>
+          <VStack as={Center} pb={['60px', '60px', '190px', '190px']}>
             <Image
               mt={['60px', '0px', '0px']}
               transform={['rotate(90deg)', 'rotate(90deg)', 'rotate(0deg)']}
