@@ -273,7 +273,7 @@ function Community() {
         </Text>
         <HStack spacing="30px">
           <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
-            Join Us
+            Join Now
           </Button>
         </HStack>
       </VStack>
