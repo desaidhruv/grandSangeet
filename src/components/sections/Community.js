@@ -215,11 +215,11 @@ function Community() {
             as={AiOutlineCloseCircle}
           />
 
-          <Text p="20px" as={Center} fontSize="40px">
+          <Text p="20px"  as={Center} fontSize={["30px","30px","40px"]}>
             Join our community!
           </Text>
-          <Flex pt="50px" justify="center" w="full" direction="row">
-            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+          <Flex fontSize={["25px","25px","35px"]} justify="space-evenly"  pt="50px" justify="center" w="full" direction="row">
+            <Flex  direction="row" w={["90%","90%","60%"]} as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Full Name</FormLabel>
                 <Input placeholder="Enter your name" variant="flushed" type="name" />
@@ -234,8 +234,8 @@ function Community() {
               </FormControl>
             </Flex>
           </Flex>
-          <Flex pt="50px" justify="center" w="full" direction="row">
-            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+          <Flex  fontSize={["25px","25px","35px"]} pt="50px" justify="center" w="full" direction="row">
+            <Flex direction="row"w={["90%","90%","60%"]} as={Center} justify="space-evenly">
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Phone Number</FormLabel>
                 <Input placeholder="e.g. 999-999-9999" variant="flushed" type="name" />
@@ -251,7 +251,7 @@ function Community() {
             </Flex>
           </Flex>
           <Box p="50px" as={Center}>
-            <Button bg="#FF3B63" size="l">
+            <Button fontSize={["18px","20px","30px"]} bg="#FF3B63" size="l">
               Join us
             </Button>
           </Box>
@@ -263,7 +263,7 @@ function Community() {
             w="350px"
             h="350px"
           >
-            <Image pt="200px" w="100%" h="100%" src={ImageModal} />
+            <Image display={["none","flex","flex"]} pt="200px" w="100%" h="100%" src={ImageModal} />
           </Box>
         </ModalContent>
       </Modal>
@@ -272,7 +272,7 @@ function Community() {
           Join our community <br /> to help you grow as choreographers.
         </Text>
         <HStack spacing="30px">
-          <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg">
+          <Button   onClick={onOpen} color="white" bgColor="brand.100" size="lg">
             Join us
           </Button>
         </HStack>
