@@ -26,10 +26,19 @@ export default function Contact() {
       <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">
         Contact us
       </Text>
-      <Flex as={Center} pb="30px">
+      <Flex
+        justifyContent="space-evenly"
+        direction="row"
+        // justifyContent="center"
+        alignItems="center"
+        w="inherit"
+        // border="2px solid yellow"
+        as={Center}
+        pb="30px"
+      >
         <VStack
+          w={["80%","80%","50%"]}
           // w="50%"
-          w="50%"
           as={Center}
         >
           <Flex
@@ -83,11 +92,11 @@ export default function Contact() {
             </FormControl>
           </HStack>
           <Flex pt="20px" pb="20px">
-            <Button as={Center} size="md" bgColor="brand.100" color="white">
+            <Button  _hover={{ bg: '#FBB1C3', color: '#FF3B63' }} as={Center} size="md" bgColor="brand.100" color="white">
               Send message
             </Button>
           </Flex>
-          <Box  bgColor="#FFF8F9" borderRadius="18px" p="20px" w="full" >
+          <Box bgColor="#FFF8F9" borderRadius="18px" p="20px" w="full">
             <Flex flexDir="column" w="full">
               <Text
                 as={Center}
@@ -101,7 +110,7 @@ export default function Contact() {
               <InputGroup>
                 <Input placeholder="Enter email address" />
                 <InputRightElement w="100px">
-                  <Button color="white" bgColor="brand.100">
+                  <Button  _hover={{ bg: '#FBB1C3', color: '#FF3B63' }} color="white" bgColor="brand.100">
                     Subscribe
                   </Button>
                 </InputRightElement>
@@ -109,33 +118,40 @@ export default function Contact() {
             </Flex>
             <Flex
               justify="center"
-              h="400px"
+              // h="400px"
+              pt="50px"
+              w="inherit"
+              // border="2px solid red"
               justify="space-evenly"
               direction={['column', 'column', 'column', 'row']}
               // justifyContent="space-between"
               // as={Center}
               // align="center"
               // w="80%"
+              fontSize="13px"
+              as={Center}
             >
-              <VStack spacing="10px">
+              <VStack w={["80%","30%"]}  spacing="10px">
                 <Image src={mailIcon} />
-                <Text>Support@grandsangeet.com</Text>
+                <Text textAlign="center">Support@grandsangeet.com</Text>
               </VStack>
-              <VStack spacing="10px">
+              <VStack  w={["80%","30%"]} spacing="10px">
                 <Image src={location} />
-                <Text>Prabhat lane, duttatota, puri, odisha, 752001</Text>
+                <Text textAlign="center">
+                  Prabhat lane, duttatota, puri, odisha, 752001
+                </Text>
               </VStack>
-              <VStack spacing="10px">
+              <VStack w={["80%","30%"]} spacing="10px">
                 <Image src={phone} />
-                <Text>+91 7327819258 ,+91 8328856530</Text>
+                <Text textAlign="center">+91 7327819258, +91 8328856530</Text>
               </VStack>
             </Flex>
           </Box>
         </VStack>
 
-        {/* <Box w="50%">
-          <Image src={contact}/>
-        </Box> */}
+        <Box display={['none', 'none', 'flex', 'flex']}>
+          <Image src={contact} />
+        </Box>
       </Flex>
       <Divider />
     </Box>

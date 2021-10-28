@@ -47,7 +47,9 @@ function Services() {
               as={Center}
             >
               <Image
-                src={{ sm: DancerPhone, md: dancer, lg: dancer, xl: dancer }}
+                w={['103px', '103px', '177px']}
+                h={['104px', '104px', '179px']}
+                src={dancer}
               />
             </Box>
             <Text fontSize={['20px', '20px', '30px']}>Background Dancer</Text>
@@ -74,7 +76,11 @@ function Services() {
               bg={'white'}
               as={Center}
             >
-              <Image src={[anchorPhone, anchor, anchor, anchor]} />
+              <Image
+                w={['103px', '103px', '177px']}
+                h={['104px', '104px', '179px']}
+                src={anchor}
+              />
             </Box>
             <Text fontSize={['20px', '20px', '30px']}>Anchor</Text>
             <Text
@@ -98,12 +104,9 @@ function Services() {
               as={Center}
             >
               <Image
-                src={[
-                  choreographerPhone,
-                  choreographer,
-                  choreographer,
-                  choreographer,
-                ]}
+                w={['103px', '103px', '177px']}
+                h={['104px', '104px', '179px']}
+                src={choreographer}
               />
             </Box>
             <Text fontSize={['20px', '20px', '30px']}>Visuals and props</Text>

@@ -45,12 +45,10 @@ function Community() {
           justify={['stretch', 'stretch', 'stretch', 'space-evenly']}
           w={['75%', '80%', '80%', '95%']}
           h="full"
-
           overflowY="hidden"
           overflowX="auto"
         >
           <VStack
-
             boxShadow="5px 5px 11px 0px #0000001A"
             w={['121px', '121px', '121px', '290px']}
             h={['298px', '298px', '298px', '477px']}
@@ -79,7 +77,9 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Working with grand sangeet will not only get you to experience an exciting challenges but you also get a global exposure of making people move and groove on the dance floor.
+                Working with grand sangeet will not only get you to experience
+                an exciting challenges but you also get a global exposure of
+                making people move and groove on the dance floor.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -116,8 +116,9 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                You will get mentored by industry experts which will eventually enhance your expertise and
-                will lead you to the path of become a successful wedding choreographer.
+                You will get mentored by industry experts which will eventually
+                enhance your expertise and will lead you to the path of become a
+                successful wedding choreographer.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -140,7 +141,10 @@ function Community() {
               spacing={['10px', '15px', '18px', '25px']}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={businessGrowth} />
+                <Image
+                  w={['73px', '73px', '73px', 'full']}
+                  src={businessGrowth}
+                />
               </Box>
               <Text
                 fontSize={['12px', '12px', '12px', '24px']}
@@ -154,7 +158,9 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Working with us gives you an  opportunity of getting a lot of clients and an increase in revenue. Because you become a part of a highly motivated team.
+                Working with us gives you an opportunity of getting a lot of
+                clients and an increase in revenue. Because you become a part of
+                a highly motivated team.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -191,7 +197,9 @@ function Community() {
                 color="#707070"
                 textAlign="center"
               >
-                Grand sangeet offers you a personalized sales team who are highly trained in bringing the best deal on the table by understanding the clients need.
+                Grand sangeet offers you a personalized sales team who are
+                highly trained in bringing the best deal on the table by
+                understanding the clients need.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
                 sizes backed by 24x7x365 <br />
@@ -215,14 +223,30 @@ function Community() {
             as={AiOutlineCloseCircle}
           />
 
-          <Text p="20px" as={Center} fontSize="40px">
+          <Text p="20px" as={Center} fontSize={['30px', '30px', '40px']}>
             Join our community!
           </Text>
-          <Flex pt="50px" justify="center" w="full" direction="row">
-            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+          <Flex
+            fontSize={['25px', '25px', '35px']}
+            justify="space-evenly"
+            pt="50px"
+            justify="center"
+            w="full"
+            direction="row"
+          >
+            <Flex
+              direction="row"
+              w={['90%', '90%', '60%']}
+              as={Center}
+              justify="space-evenly"
+            >
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Full Name</FormLabel>
-                <Input placeholder="Enter your name" variant="flushed" type="name" />
+                <Input
+                  placeholder="Enter your name"
+                  variant="flushed"
+                  type="name"
+                />
               </FormControl>
               <FormControl w="40%" id="email">
                 <FormLabel color="brand.100">Email</FormLabel>
@@ -234,11 +258,26 @@ function Community() {
               </FormControl>
             </Flex>
           </Flex>
-          <Flex pt="50px" justify="center" w="full" direction="row">
-            <Flex direction="row" w="60%" as={Center} justify="space-evenly">
+          <Flex
+            fontSize={['25px', '25px', '35px']}
+            pt="50px"
+            justify="center"
+            w="full"
+            direction="row"
+          >
+            <Flex
+              direction="row"
+              w={['90%', '90%', '60%']}
+              as={Center}
+              justify="space-evenly"
+            >
               <FormControl w="40%" id="name" pr="20px">
                 <FormLabel color="brand.100">Phone Number</FormLabel>
-                <Input placeholder="e.g. 999-999-9999" variant="flushed" type="name" />
+                <Input
+                  placeholder="e.g. 999-999-9999"
+                  variant="flushed"
+                  type="name"
+                />
               </FormControl>
               <FormControl w="40%" id="email">
                 <FormLabel color="brand.100">Social Media Link</FormLabel>
@@ -251,11 +290,17 @@ function Community() {
             </Flex>
           </Flex>
           <Box p="50px" as={Center}>
-            <Button bg="#FF3B63" size="l" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
-              Join Now
+            <Button
+              fontSize={['18px', '20px', '30px']}
+              bg="#FF3B63"
+              size="l"
+              _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
+            >
+              Join us
             </Button>
           </Box>
           <Box
+            display={['none', 'flex', 'flex']}
             overflow="hidden"
             pos="absolute"
             right="0"
@@ -272,8 +317,14 @@ function Community() {
           Join our community <br /> to help you grow as choreographers.
         </Text>
         <HStack spacing="30px">
-          <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
-            Join Now
+          <Button
+            onClick={onOpen}
+            color="white"
+            bgColor="brand.100"
+            size="lg"
+            _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
+          >
+            Join us
           </Button>
         </HStack>
       </VStack>
