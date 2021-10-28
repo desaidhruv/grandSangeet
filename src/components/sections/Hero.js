@@ -66,7 +66,7 @@ export default function Hero() {
             >
               India's favourite wedding choreogaphy brand.
             </Text>
-            <Button fontFamily="Poppins" fontWeight="normal" fontSize={["14px","14px","20px"]}   bg="brand.100" w={["120px","200px","200px"]} h={["40px","60px",'60px']} >
+            <Button fontFamily="Poppins" fontWeight="normal" fontSize={["14px","14px","20px"]}   bg="brand.100" w={["120px","200px","200px"]} h={["40px","60px",'60px']} _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
               Book now
             </Button>
           </VStack>
