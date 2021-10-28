@@ -252,7 +252,7 @@ function Community() {
           </Flex>
           <Box p="50px" as={Center}>
             <Button bg="#FF3B63" size="l" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
-              Join us
+              Join Now
             </Button>
           </Box>
           <Box
@@ -273,7 +273,7 @@ function Community() {
         </Text>
         <HStack spacing="30px">
           <Button onClick={onOpen} color="white" bgColor="brand.100" size="lg" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>
-            Join us
+            Join Now
           </Button>
         </HStack>
       </VStack>
