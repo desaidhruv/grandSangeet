@@ -63,16 +63,15 @@ export default function Gallery() {
                   />
                 </VStack>
                 <VStack>
-                  {/* <iframe
-                    height="80%"
-                    width="80%"
-                    src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                  <iframe
+                    height="100%"
+                    width="100%"
+                    src="https://www.youtube.com/embed/8Pot-rK-13Y?modestbranding=1&autoplay=1&showinfo=0&controls=0"
                     title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="true"
-                  ></iframe> */}
-                  {/* <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text> */}
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    className="ytVideo"
+                  ></iframe>
                 </VStack>
                 <VStack>
                   <Image
@@ -194,6 +193,24 @@ export default function Gallery() {
                 spacingX="18px"
                 spacingY="20px"
               >
+                <iframe
+                  height="100%"
+                  width="100%"
+                  src="https://www.youtube.com/embed/8Pot-rK-13Y?controls=0"
+                  title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  className="ytVideo"
+                ></iframe>
+                <iframe 
+                  height="100%"
+                  width="100%"
+                  src="https://www.youtube.com/embed/LtvnCpdx94M?controls=0&modestbranding=0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                  className="ytVideo"
+                  ></iframe>
                 {/* <iframe
                   src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
                   title="YouTube video player"
