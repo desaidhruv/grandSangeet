@@ -25,6 +25,8 @@ export default function Footer() {
         justifyContent={'center'}
         transition={'background 0.3s ease'}
         bgColor="white"
+        fontSize="30px"
+        href={href}
       >
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
@@ -98,26 +100,26 @@ export default function Footer() {
       >
         <SocialButton
           label={'Facebook'}
-          href={'https://www.facebook.com/Grand-Sangeet-103408768813408/'}
+          href="https://www.facebook.com/Grand-Sangeet-103408768813408/"
           bgColor="white"
         >
           <FaFacebook />
         </SocialButton>
         <SocialButton
           label={'Linkedin'}
-          href={'https://www.linkedin.com/company/grand-sangeet'}
+          href="https://www.linkedin.com/company/grand-sangeet"
         >
           <FaLinkedin />
         </SocialButton>
         <SocialButton
           label={'Instagram'}
-          href={'https://instagram.com/grand.sangeet?utm_medium=copy_link'}
+          href="https://instagram.com/grand.sangeet?utm_medium=copy_link"
         >
           <FaInstagram />
         </SocialButton>
         <SocialButton
           label={'YouTube'}
-          href={'https://youtube.com/channel/UC8FK3j_NO0drmiNNBZyhmlw'}
+          href="https://youtube.com/channel/UC8FK3j_NO0drmiNNBZyhmlw"
         >
           <FaYoutube />
         </SocialButton>
