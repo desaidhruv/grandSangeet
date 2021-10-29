@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Navbar";
-import gsmp4 from "../../assets/photos/gs.mp4";
+import gsmp4 from "../../assets/photos/gs.webm";
 import gsmp4Mob from "../../assets/photos/gs1.mp4";
 import heroArrow from "../../assets/photos/hero arrow.png";
 import "@fontsource/poppins";
