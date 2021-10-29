@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Flex,
   FormControl,
@@ -13,7 +14,6 @@ import {
   FormLabel,
   Text,
 } from '@chakra-ui/react';
-import React from 'react';
 import { Divider } from './Divider';
 import mailIcon from '../../assets/photos/mailIcon.svg';
 import location from '../../assets/photos/location.svg';

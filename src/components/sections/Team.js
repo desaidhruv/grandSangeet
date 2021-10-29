@@ -2,15 +2,11 @@ import React from 'react';
 import {
   VStack,
   Image,
-  Button,
   Text,
   Box,
   Center,
-  HStack,
-  Stack,
   Flex,
 } from '@chakra-ui/react';
-import Rohan from '../../assets/photos/Rohan.png';
 import Dhruv from '../../assets/photos/dhruv.png';
 import Sakshi from '../../assets/photos/sakshi.png';
 import Keval from '../../assets/photos/keval.png';

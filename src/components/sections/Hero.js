@@ -1,11 +1,9 @@
 import {
   Box,
   Center,
-  Heading,
   Button,
   VStack,
   Text,
-  Icon,
   Flex,
   Spacer,
   Image

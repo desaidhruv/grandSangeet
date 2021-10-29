@@ -3,7 +3,6 @@ import {
   HStack,
   Button,
   Text,
-  VStack,
   Flex,
   Center,
   Stack,
@@ -21,7 +20,6 @@ export default function Footer() {
         h={50}
         cursor={'pointer'}
         as={'a'}
-        // href={href}
         display={'inline-flex'}
         alignItems={'center'}
         justifyContent={'center'}

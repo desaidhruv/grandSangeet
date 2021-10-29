@@ -2,18 +2,15 @@ import React from 'react';
 import {
   Box,
   Center,
-  VStack,
   Image,
   Text,
-  HStack,
-  Button,
 } from '@chakra-ui/react';
 import banner1 from '../../assets/photos/Service1.png';
 import banner2 from '../../assets/photos/Service2.png';
 import banner3 from '../../assets/photos/Service3.png';
 import banner4 from '../../assets/photos/Service4.png';
-import arrow from '../../assets/photos/aroow.svg';
-import backarrow from '../../assets/photos/back arrow.svg';
+// import arrow from '../../assets/photos/aroow.svg';
+// import backarrow from '../../assets/photos/back arrow.svg';
 import './whyweare.css'
 // import {
 //   CarouselProvider,
@@ -27,40 +24,40 @@ import './whyweare.css'
 // import 'pure-react-carousel/dist/react-carousel.es.css';
 import Carousel from 'react-grid-carousel';
 import { Divider } from './Divider';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 export const WhyWeAre = () => {
-  const ArrowBtn = styled.span`
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: ${({ type }) => (type === 'right' ? '-40px' : 'unset')};
-  left: ${({ type }) => (type === 'left' ? '-40px' : 'unset')};
-  width: 45px;
-  height: 45px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: ${({ type }) =>
-      type === 'right'
-        ? 'translate(-75%, -50%) rotate(45deg)'
-        : 'translate(-25%, -50%) rotate(-135deg)'};
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
-  }
-  &:hover::after {
-    border-color: #333;
-  }
-`
+//   const ArrowBtn = styled.span`
+//   display: inline-block;
+//   position: absolute;
+//   top: 50%;
+//   right: ${({ type }) => (type === 'right' ? '-40px' : 'unset')};
+//   left: ${({ type }) => (type === 'left' ? '-40px' : 'unset')};
+//   width: 45px;
+//   height: 45px;
+//   background: #fff;
+//   border-radius: 50%;
+//   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+//   cursor: pointer;
+//   &::after {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: ${({ type }) =>
+//       type === 'right'
+//         ? 'translate(-75%, -50%) rotate(45deg)'
+//         : 'translate(-25%, -50%) rotate(-135deg)'};
+//     width: 10px;
+//     height: 10px;
+//     border-top: 2px solid #666;
+//     border-right: 2px solid #666;
+//   }
+//   &:hover::after {
+//     border-color: #333;
+//   }
+// `
   const MyDot = ({ isActive }) => (
     <span
       style={{
