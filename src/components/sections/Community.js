@@ -310,7 +310,7 @@ function Community() {
                     name="link"
                     value={link}
                     onChange={handleChange}
-                    placeholder="https//portfolio.com"
+                    placeholder="URL"
                     variant="flushed"
                   />
                 </FormControl>

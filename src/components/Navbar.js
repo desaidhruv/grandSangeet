@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Flex,
@@ -14,21 +14,25 @@ import {
   Icon,
   Spacer,
   Button,
-} from '@chakra-ui/react';
-import { MdMenu } from 'react-icons/md';
-import logo from '../assets/photos/logo.svg';
-import close from '../assets/photos/close.svg';
-import mhome from '../assets/photos/mhome.svg';
-import mgallery from '../assets/photos/mgallery.svg';
-import maboutus from '../assets/photos/maboutus.svg';
-import mcontactus from '../assets/photos/mcontactus.svg';
-import mjoinus from '../assets/photos/mjoinus.svg';
+} from "@chakra-ui/react";
+import { MdMenu } from "react-icons/md";
+import logo from "../assets/photos/logo.svg";
+import close from "../assets/photos/close.svg";
+import mhome from "../assets/photos/mhome.svg";
+import mgallery from "../assets/photos/mgallery.svg";
+import maboutus from "../assets/photos/maboutus.svg";
+import mcontactus from "../assets/photos/mcontactus.svg";
+import mjoinus from "../assets/photos/mjoinus.svg";
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex pt="20px" pb="20px" pl="40px" justify="space-between" pr="40px">
       <Box zIndex="1" as={Center}>
-        <Image h={["64px","64px","84px"]} w={["58px","58px","78px"]}  src={logo} />
+        <Image
+          h={["64px", "64px", "84px"]}
+          w={["58px", "58px", "78px"]}
+          src={logo}
+        />
       </Box>
 
       <Spacer />
@@ -43,7 +47,7 @@ export default function Navbar() {
           fontSize="30px"
           color="white"
           as={MdMenu}
-          display={['flex', 'flex', 'none', 'none']}
+          display={["flex", "flex", "none", "none"]}
         />
       </Center>
       <Drawer
@@ -59,40 +63,51 @@ export default function Navbar() {
           borderLeftRadius="40px"
           h="fit-content"
         >
-          {/* <DrawerBody border="2px solid red" > */}
-            {' '}
-            <VStack w="full" align="center">
-              <Box  as={Center} h="105px">
-                <Image w="40px" h="40px" onClick={onClose} src={close} />
-              </Box>
-              <Box as={Center} h="105px">
-                <Image w="80px" h="80px"src={mhome} />
-              </Box>
-              <Box as={Center} h="105px">
-                <Image w="60px" h="60px" src={mgallery} />
-              </Box>
-              <Box as={Center} h="105px">
-                <Image w="80px" h="80px" src={maboutus} />
-              </Box>
-              <Box as={Center} h="105px">
-                <Image w="80px" h="80px" src={mcontactus} />
-              </Box>
-              <Box  borderBottomLeftRadius="40px" bg="#FF3B63" w="full" as={Center} h="105px">
-                <Image w="80px" h="80px" src={mjoinus} />
-              </Box>
-            </VStack>
+          {/* <DrawerBody border="2px solid red" > */}{" "}
+          <VStack w="full" align="center">
+            <Box as={Center} h="105px">
+              <Image w="40px" h="40px" onClick={onClose} src={close} />
+            </Box>
+            <Box w="full" as={Center} h="105px">
+              <Image w="80px" h="80px" src={mhome} />
+            </Box>
+            <Center as={Link} w="full" href="#gallery" h="105px">
+              <Image w="60px" h="60px" src={mgallery} />
+            </Center>
+            <Center as={Link} w="full" href="#about" h="105px">
+              <Image href="#about" w="80px" h="80px" src={maboutus} />
+            </Center>
+            <Center as={Link} w="full" href="#contact" h="105px">
+              <Image w="80px" h="80px" src={mcontactus} />
+            </Center>
+            <Box
+              borderBottomLeftRadius="40px"
+              bg="#FF3B63"
+              w="full"
+              as={Center}
+              h="105px"
+            >
+              <Image w="80px" h="80px" src={mjoinus} />
+            </Box>
+          </VStack>
           {/* </DrawerBody> */}
         </DrawerContent>
       </Drawer>
       <HStack
-        display={['none', 'none', 'flex', 'flex']}
+        display={["none", "none", "flex", "flex"]}
         color="white"
         spacing="20px"
       >
-        <Button  variant="outline" >Home</Button>
-        <Button as={Link} colorScheme="white" href="#about">About us</Button>
-        <Button as={Link} colorScheme="white" href="#gallery">Gallery</Button>
-        <Button as={Link} colorScheme="white" href="#contact">Contact</Button>
+        <Button variant="outline">Home</Button>
+        <Button colorScheme="white" as={Link} href="#about">
+          About us
+        </Button>
+        <Button as={Link} colorScheme="white" href="#gallery">
+          Gallery
+        </Button>
+        <Button as={Link} colorScheme="white" href="#contact">
+          Contact
+        </Button>
       </HStack>
     </Flex>
   );
