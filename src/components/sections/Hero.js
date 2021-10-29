@@ -6,32 +6,53 @@ import {
   Text,
   Flex,
   Link,
+  useMediaQuery,
   Spacer,
   Image,
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Navbar";
-import bggif from "../../assets/photos/bggif.gif";
+import gsmp4 from "../../assets/photos/gs.mp4";
+import gsmp4Mob from "../../assets/photos/gs1.mp4";
 import heroArrow from "../../assets/photos/hero arrow.png";
-import bgmob from "../../assets/photos/bgmob1.gif";
 import "@fontsource/poppins";
 import "./Hero.css";
 import { Divider } from "./Divider";
 import "../../App.css";
 export default function Hero() {
+  const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
   return (
     <>
-      <Box
-        backgroundImage={[bgmob, bggif, bggif, bggif]}
-        backgroundRepeat="no-repeat"
-        backgroundPosition="center"
-        backgroundSize="cover"
-        w="full"
-        h="100vh"
-        pos="relative"
-      >
-        {/* <video>    */}
-
+      {isLargerThan1280 ? (
+        <video
+          style={{
+            position: "absolute",
+            height: "100vh",
+            width: "100%",
+            objectFit: "cover",
+          }}
+          loop
+          height="100vh"
+          autoPlay
+        >
+          <source src={gsmp4} type="video/mp4" />
+        </video>
+      ) : (
+        <video
+          style={{
+            position: "absolute",
+            height: "100vh",
+            width: "100%",
+            objectFit: "cover",
+          }}
+          loop
+          height="100vh"
+          autoPlay
+        >
+          <source src={gsmp4Mob} type="video/mp4" />
+        </video>
+      )}
+      <Box w="full" h="100vh" pos="relative">
         <Box
           w="full"
           bg="black"
@@ -69,7 +90,7 @@ export default function Hero() {
               India's favourite wedding choreogaphy brand.
             </Text>
             <Button
-              style={{textDecoration:"none"}}
+              style={{ textDecoration: "none" }}
               textDecoration="none"
               textDecorationLine="none"
               as={Link}

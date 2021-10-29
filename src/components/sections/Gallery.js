@@ -6,6 +6,7 @@ import {
   Center,
   Flex,
   SimpleGrid,
+
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Gallery1 from '../../assets/photos/gallery1.jpeg';
@@ -24,6 +25,7 @@ import { Divider } from './Divider';
 import './gallery.css';
 
 export default function Gallery() {
+
   return (
     <>
       <Flex direction="column" spacing="15px" as={Center} h="800px" id="gallery">
@@ -68,7 +70,7 @@ export default function Gallery() {
                     width="100%"
                     src="https://www.youtube.com/embed/8Pot-rK-13Y?modestbranding=1&autoplay=1&showinfo=0&controls=0"
                     title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     className="ytVideo"
                   ></iframe>
