@@ -67,8 +67,8 @@ export default function Contact() {
         as={Center}
         pb="30px"
       >
-        <form onSubmit={handleSubmit}>
-          <VStack w={["80%", "80%", "50%"]} as={Center}>
+        <VStack w={["80%", "80%", "50%"]} as={Center}>
+          <form onSubmit={handleSubmit}>
             <Flex
               direction={["column", "column", "column", "row"]}
               h="200px"
@@ -214,8 +214,8 @@ export default function Contact() {
                 </VStack>
               </Flex>
             </Box>
-          </VStack>
-        </form>
+          </form>
+        </VStack>
 
         <Box display={["none", "none", "flex", "flex"]}>
           <Image src={contact} />
