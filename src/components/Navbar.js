@@ -3,25 +3,19 @@ import {
   Box,
   Flex,
   Image,
-  Text,
   VStack,
   Center,
   Link,
   Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   HStack,
   useDisclosure,
   Icon,
   Spacer,
-  Heading,
   Button,
 } from '@chakra-ui/react';
-import { MdClose, MdMenu } from 'react-icons/md';
+import { MdMenu } from 'react-icons/md';
 import logo from '../assets/photos/logo.svg';
 import close from '../assets/photos/close.svg';
 import mhome from '../assets/photos/mhome.svg';

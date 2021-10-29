@@ -5,20 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import "./index.css"
-const { useEffect } = React;
+// const { useEffect } = React;
 
-const loader = document.querySelector('.loader');
+// const loader = document.querySelector('.loader');
 
-// if you want to show the loader when React loads data again
-const showLoader = () => loader.classList.remove('loader--hide');
+// // if you want to show the loader when React loads data again
+// const showLoader = () => loader.classList.remove('loader--hide');
 
-const hideLoader = () => loader.classList.add('loader--hide');
+// const hideLoader = () => loader.classList.add('loader--hide');
 
-const TheApp = ({ hideLoader }) => {
-  useEffect(hideLoader, []);
+// const TheApp = ({ hideLoader }) => {
+//   useEffect(hideLoader, []);
 
-  return (App);
-};
+//   return (App);
+// };
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />

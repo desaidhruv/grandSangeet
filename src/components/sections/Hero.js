@@ -1,11 +1,9 @@
 import {
   Box,
   Center,
-  Heading,
   Button,
   VStack,
   Text,
-  Icon,
   Flex,
   Spacer,
   Image
@@ -14,7 +12,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import bggif from '../../assets/photos/bggif.gif';
 import heroArrow from '../../assets/photos/hero arrow.png';
-import bgmob from '../../assets/photos/bgmob.gif';
+import bgmob from '../../assets/photos/bgmob1.gif';
 import '@fontsource/poppins';
 import './Hero.css';
 import { Divider } from './Divider';
@@ -36,7 +34,7 @@ export default function Hero() {
         <Box
           w="full"
           bg="black"
-          opacity=".4"
+          opacity=".6"
           h="full"
           position="absolute"
         ></Box>

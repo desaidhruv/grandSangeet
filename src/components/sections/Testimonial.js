@@ -1,55 +1,52 @@
 import {
   Box,
   Center,
-  VStack,
   Image,
   Text,
-  HStack,
-  Button,
 } from '@chakra-ui/react';
 import React from 'react';
 // import Carousel, { consts } from 'react-elastic-carousel';
 import tt1 from '../../assets/photos/tt1.svg';
 import tt2 from '../../assets/photos/tt2.svg';
 import tt3 from '../../assets/photos/tt3.svg';
-import tt4 from '../../assets/photos/tt4.svg';
+// import tt4 from '../../assets/photos/tt4.svg';
 import './slider.css';
 import Carousel from 'react-grid-carousel';
 import { Divider } from './Divider';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 export const Testimonial = () => {
-  const ArrowBtn = styled.span`
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  right: ${({ type }) => (type === 'right' ? '-40px' : 'unset')};
-  left: ${({ type }) => (type === 'left' ? '-40px' : 'unset')};
-  width: 45px;
-  height: 45px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  &::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: ${({ type }) =>
-      type === 'right'
-        ? 'translate(-75%, -50%) rotate(45deg)'
-        : 'translate(-25%, -50%) rotate(-135deg)'};
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #666;
-    border-right: 2px solid #666;
-  }
-  &:hover::after {
-    border-color: #333;
-  }
-`
+//   const ArrowBtn = styled.span`
+//   display: inline-block;
+//   position: absolute;
+//   top: 50%;
+//   right: ${({ type }) => (type === 'right' ? '-40px' : 'unset')};
+//   left: ${({ type }) => (type === 'left' ? '-40px' : 'unset')};
+//   width: 45px;
+//   height: 45px;
+//   background: #fff;
+//   border-radius: 50%;
+//   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+//   cursor: pointer;
+//   &::after {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: ${({ type }) =>
+//       type === 'right'
+//         ? 'translate(-75%, -50%) rotate(45deg)'
+//         : 'translate(-25%, -50%) rotate(-135deg)'};
+//     width: 10px;
+//     height: 10px;
+//     border-top: 2px solid #666;
+//     border-right: 2px solid #666;
+//   }
+//   &:hover::after {
+//     border-color: #333;
+//   }
+// `
   const MyDot = ({ isActive }) => (
     <span
       style={{

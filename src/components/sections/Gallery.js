@@ -2,16 +2,12 @@ import React from 'react';
 import {
   VStack,
   Image,
-  Button,
   Text,
   Center,
   Flex,
-  Box,
-  HStack,
   SimpleGrid,
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import Rohan from '../../assets/photos/Rohan.png';
 import Gallery1 from '../../assets/photos/gallery1.jpeg';
 import Gallery2 from '../../assets/photos/gallery2.jpeg';
 import Gallery3 from '../../assets/photos/gallery3.jpeg';
@@ -20,10 +16,10 @@ import Gallery5 from '../../assets/photos/gallery5.jpeg';
 import Gallery6 from '../../assets/photos/gallery6.jpeg';
 import Gallery7 from '../../assets/photos/gallery7.jpeg';
 import Gallery8 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.07 PM.jpeg';
-import Gallery9 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.08 PM.jpeg';
-import Gallery10 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.09 PM.jpeg';
-import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
-import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
+// import Gallery9 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.08 PM.jpeg';
+// import Gallery10 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.09 PM.jpeg';
+// import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
+// import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
 import { Divider } from './Divider';
 import './gallery.css';
 
@@ -68,15 +64,14 @@ export default function Gallery() {
                 </VStack>
                 <VStack>
                   <iframe
-                    height="80%"
-                    width="80%"
-                    src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
+                    height="100%"
+                    width="100%"
+                    src="https://www.youtube.com/embed/8Pot-rK-13Y?modestbranding=1&autoplay=1&showinfo=0&controls=0"
                     title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen="true"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    className="ytVideo"
                   ></iframe>
-                  {/* <Text fontSize={['12px', '12px', '30px']}>Shimla bride</Text> */}
                 </VStack>
                 <VStack>
                   <Image
@@ -199,6 +194,24 @@ export default function Gallery() {
                 spacingY="20px"
               >
                 <iframe
+                  height="100%"
+                  width="100%"
+                  src="https://www.youtube.com/embed/8Pot-rK-13Y?controls=0"
+                  title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  className="ytVideo"
+                ></iframe>
+                <iframe 
+                  height="100%"
+                  width="100%"
+                  src="https://www.youtube.com/embed/LtvnCpdx94M?controls=0&modestbranding=0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                  className="ytVideo"
+                  ></iframe>
+                {/* <iframe
                   src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
                   title="YouTube video player"
                   frameborder="0"
@@ -219,14 +232,11 @@ export default function Gallery() {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                ></iframe>
+                ></iframe> */}
               </SimpleGrid>
             </TabPanel>
           </TabPanels>
         </Tabs>
-        {/* <Button color="white" bgColor="brand.100" size="lg">
-          View More
-        </Button> */}
       </Flex>
       <Divider />
     </>

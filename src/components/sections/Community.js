@@ -13,10 +13,6 @@ import {
   ModalOverlay,
   ModalContent,
   Input,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
   HStack,
   Box,
   Icon,
@@ -111,10 +107,6 @@ function Community() {
                 Working with grand sangeet will not only get you to experience
                 an exciting challenges but you also get a global exposure of
                 making people move and groove on the dance floor.
-                {/* Blazing fast web hosting for <br />
-                individuals and businesses of all <br />
-                sizes backed by 24x7x365 <br />
-                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -150,10 +142,6 @@ function Community() {
                 You will get mentored by industry experts which will eventually
                 enhance your expertise and will lead you to the path of becoming a
                 successful wedding choreographer.
-                {/* Blazing fast web hosting for <br />
-                individuals and businesses of all <br />
-                sizes backed by 24x7x365 <br />
-                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -192,10 +180,6 @@ function Community() {
                 Working with us gives you an opportunity of getting a lot of
                 clients and an increase in revenue. Because you become a part of
                 a highly motivated team.
-                {/* Blazing fast web hosting for <br />
-                individuals and businesses of all <br />
-                sizes backed by 24x7x365 <br />
-                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>
@@ -231,10 +215,6 @@ function Community() {
                 Grand sangeet offers you a personalized sales team who are
                 highly trained in bringing the best deal on the table by
                 understanding the clients need.
-                {/* Blazing fast web hosting for <br />
-                individuals and businesses of all <br />
-                sizes backed by 24x7x365 <br />
-                Support.Blazing fast web. */}
               </Text>
             </VStack>
           </VStack>

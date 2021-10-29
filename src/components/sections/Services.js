@@ -5,16 +5,14 @@ import {
   Image,
   Text,
   Center,
-  HStack,
   Box,
 } from '@chakra-ui/react';
 import choreographer from '../../assets/photos/choreographer.png';
 import anchor from '../../assets/photos/anchor.png';
 import dancer from '../../assets/photos/Dancer.png';
-import DancerPhone from '../../assets/photos/bg troop mb.png';
-import choreographerPhone from '../../assets/photos/visual mb.png';
-import anchorPhone from '../../assets/photos/anchor mb.png';
-import serviceLine from '../../assets/photos/serviceline.png';
+// import DancerPhone from '../../assets/photos/bg troop mb.png';
+// import choreographerPhone from '../../assets/photos/visual mb.png';
+// import anchorPhone from '../../assets/photos/anchor mb.png';
 import { Divider } from './Divider';
 
 function Services() {

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Flex,
   FormControl,
@@ -13,7 +14,6 @@ import {
   FormLabel,
   Text,
 } from '@chakra-ui/react';
-import React from 'react';
 import { Divider } from './Divider';
 import mailIcon from '../../assets/photos/mailIcon.svg';
 import location from '../../assets/photos/location.svg';
@@ -29,16 +29,13 @@ export default function Contact() {
       <Flex
         justifyContent="space-evenly"
         direction="row"
-        // justifyContent="center"
         alignItems="center"
         w="inherit"
-        // border="2px solid yellow"
         as={Center}
         pb="30px"
       >
         <VStack
           w={["80%","80%","50%"]}
-          // w="50%"
           as={Center}
         >
           <Flex
@@ -92,7 +89,7 @@ export default function Contact() {
             </FormControl>
           </HStack>
           <Flex pt="20px" pb="20px">
-            <Button  _hover={{ bg: '#FBB1C3', color: '#FF3B63' }} as={Center} size="md" bgColor="brand.100" color="white">
+            <Button _hover={{ bg: '#FBB1C3', color: '#FF3B63' }} size="md" bgColor="brand.100" color="white">
               Send message
             </Button>
           </Flex>
