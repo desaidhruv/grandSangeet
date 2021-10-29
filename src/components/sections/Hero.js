@@ -12,8 +12,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../Navbar";
-import gsmp4 from "../../assets/photos/gs.webm";
-import gsmp4Mob from "../../assets/photos/gs1.webm";
+import gsmp4 from "../../assets/photos/gs.mp4";
+import gsmp4Mob from "../../assets/photos/gs1.mp4";
 import heroArrow from "../../assets/photos/hero arrow.png";
 import "@fontsource/poppins";
 import "./Hero.css";
@@ -52,7 +52,13 @@ export default function Hero() {
           <source src={gsmp4Mob} type="video/mp4" />
         </video>
       )}
-      <Box w="full" h="100vh" pos="relative">
+      <Box
+        w="full"
+        h="100vh"
+        pos="relative"
+      >
+        {/* <video>    */}
+
         <Box
           w="full"
           bg="black"
