@@ -28,9 +28,40 @@ import salesTeam from '../../assets/photos/sales team.png';
 import ImageModal from '../../assets/photos/Modal.svg';
 import { Divider } from './Divider';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { useState } from 'react';
 
 function Community() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [data, setData] = useState({
+    name: '',
+    email: '',
+    number: '',
+    link: '',
+  });
+  const { name, email, number, link } = data;
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      await fetch(
+        'https://v1.nocodeapi.com/kkeval/google_sheets/JxXOUpuppfEujiAB?tabId=Sheet1',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify([
+            [name, email, number, link, new Date().toLocaleString()],
+          ]),
+        }
+      );
+      setData({ name: '', email: '', number: '', link: '' });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  const handleChange = e =>
+    setData({ ...data, [e.target.name]: e.target.value });
   return (
     <>
       <VStack as={Center} spacing={['5px', '10px', '40px', '45px']}>
@@ -117,7 +148,7 @@ function Community() {
                 textAlign="center"
               >
                 You will get mentored by industry experts which will eventually
-                enhance your expertise and will lead you to the path of become a
+                enhance your expertise and will lead you to the path of becoming a
                 successful wedding choreographer.
                 {/* Blazing fast web hosting for <br />
                 individuals and businesses of all <br />
@@ -226,79 +257,100 @@ function Community() {
           <Text p="20px" as={Center} fontSize={['30px', '30px', '40px']}>
             Join our community!
           </Text>
-          <Flex
-            fontSize={['25px', '25px', '35px']}
-            justify="space-evenly"
-            pt="50px"
-            justify="center"
-            w="full"
-            direction="row"
-          >
+          <form onSubmit={handleSubmit}>
             <Flex
-              direction="row"
-              w={['90%', '90%', '60%']}
-              as={Center}
+              fontSize={['25px', '25px', '35px']}
               justify="space-evenly"
+              pt="50px"
+              justify="center"
+              w="full"
+              direction="row"
             >
-              <FormControl w="40%" id="name" pr="20px">
-                <FormLabel color="brand.100">Full Name</FormLabel>
-                <Input
-                  placeholder="Enter your name"
-                  variant="flushed"
-                  type="name"
-                />
-              </FormControl>
-              <FormControl w="40%" id="email">
-                <FormLabel color="brand.100">Email</FormLabel>
-                <Input
-                  placeholder="johndoe@gmail.com"
-                  variant="flushed"
-                  type="email"
-                />
-              </FormControl>
+              <Flex
+                direction="row"
+                w={['90%', '90%', '60%']}
+                as={Center}
+                justify="space-evenly"
+              >
+                <FormControl w="40%" id="name" pr="20px">
+                  <FormLabel color="brand.100">Full Name</FormLabel>
+                  <Input
+                    required={true}
+                    name="name"
+                    value={name}
+                    onChange={handleChange}
+                    placeholder="Enter your name"
+                    variant="flushed"
+                    type="name"
+                  />
+                </FormControl>
+                <FormControl w="40%" id="email">
+                  <FormLabel color="brand.100">Email</FormLabel>
+                  <Input
+                    required={true}
+                    name="email"
+                    value={email}
+                    onChange={handleChange}
+                    placeholder="johndoe@gmail.com"
+                    variant="flushed"
+                    type="email"
+                  />
+                </FormControl>
+              </Flex>
             </Flex>
-          </Flex>
-          <Flex
-            fontSize={['25px', '25px', '35px']}
-            pt="50px"
-            justify="center"
-            w="full"
-            direction="row"
-          >
             <Flex
+              fontSize={['25px', '25px', '35px']}
+              pt="50px"
+              justify="center"
+              w="full"
               direction="row"
-              w={['90%', '90%', '60%']}
-              as={Center}
-              justify="space-evenly"
             >
-              <FormControl w="40%" id="name" pr="20px">
-                <FormLabel color="brand.100">Phone Number</FormLabel>
-                <Input
-                  placeholder="e.g. 999-999-9999"
-                  variant="flushed"
-                  type="name"
-                />
-              </FormControl>
-              <FormControl w="40%" id="email">
-                <FormLabel color="brand.100">Social Media Link</FormLabel>
-                <Input
-                  placeholder="https//portfolio.com"
-                  variant="flushed"
-                  type="email"
-                />
-              </FormControl>
+              <Flex
+                direction="row"
+                w={['90%', '90%', '60%']}
+                as={Center}
+                justify="space-evenly"
+              >
+                <FormControl w="40%" id="number" pr="20px">
+                  <FormLabel color="brand.100">Phone Number</FormLabel>
+                  <Input
+                    required={true}
+                    name="number"
+                    value={number}
+                    onChange={handleChange}
+                    placeholder="e.g. 999-999-9999"
+                    variant="flushed"
+                    type="name"
+                  />
+                </FormControl>
+                <FormControl w="40%" id="link">
+                  <FormLabel color="brand.100">Social Media Link</FormLabel>
+                  <Input
+                    required={true}
+                    name="link"
+                    value={link}
+                    onChange={handleChange}
+                    placeholder="https//portfolio.com"
+                    variant="flushed"
+                  />
+                </FormControl>
+              </Flex>
             </Flex>
-          </Flex>
-          <Box p="50px" as={Center}>
-            <Button
-              fontSize={['18px', '20px', '30px']}
-              bg="#FF3B63"
-              size="l"
-              _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
-            >
-              Join us
-            </Button>
-          </Box>
+            <Box p="50px" as={Center}>
+              <Button
+                type="submit"
+                required={true}
+                // onClick={handleSubmit}
+                fontSize={['18px', '20px', '30px']}
+                bg="#FF3B63"
+                size="l"
+                _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
+              >
+                Join us
+              </Button>
+            </Box>
+          </form>
+
           <Box
             display={['none', 'flex', 'flex']}
             overflow="hidden"

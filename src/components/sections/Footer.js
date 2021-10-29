@@ -58,30 +58,82 @@ export default function Footer() {
             Grand Sangeet
           </Text>
           <Spacer />
-          <Stack display={["none",'none',"flex","flex"]} direction={'row'} spacing={6}>
-            <SocialButton label={'Facebook'} href={'#'} bgColor="white">
+          <Stack
+            display={['none', 'none', 'flex', 'flex']}
+            direction={'row'}
+            spacing={6}
+          >
+            <SocialButton
+              label={'Facebook'}
+              href={'https://www.facebook.com/Grand-Sangeet-103408768813408/'}
+              bgColor="white"
+            >
               <FaFacebook />
             </SocialButton>
-            <SocialButton label={'Linkedin'} href={'#'}>
+            <SocialButton
+              label={'Linkedin'}
+              href={'https://www.linkedin.com/company/grand-sangeet'}
+            >
               <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton
+              label={'Instagram'}
+              href={'https://instagram.com/grand.sangeet?utm_medium=copy_link'}
+            >
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            <SocialButton
+              label={'YouTube'}
+              href={'https://youtube.com/channel/UC8FK3j_NO0drmiNNBZyhmlw'}
+            >
               <FaYoutube />
             </SocialButton>
           </Stack>
         </HStack>
       </HStack>
-        
-      <Flex justifyContent="end" pr="50px" color="white" h="100px" align="center">
-        <Text pr="20px">
-          Terms
-        </Text>
-        <Text >
-          Privacy Policy
-        </Text>
+      <Flex
+        w="full"
+        justify="space-evenly"
+        display={['flex', 'flex', 'none', 'none']}
+        // direction={'row'}
+        spacing={'10px'}
+      >
+        <SocialButton
+          label={'Facebook'}
+          href={'https://www.facebook.com/Grand-Sangeet-103408768813408/'}
+          bgColor="white"
+        >
+          <FaFacebook />
+        </SocialButton>
+        <SocialButton
+          label={'Linkedin'}
+          href={'https://www.linkedin.com/company/grand-sangeet'}
+        >
+          <FaLinkedin />
+        </SocialButton>
+        <SocialButton
+          label={'Instagram'}
+          href={'https://instagram.com/grand.sangeet?utm_medium=copy_link'}
+        >
+          <FaInstagram />
+        </SocialButton>
+        <SocialButton
+          label={'YouTube'}
+          href={'https://youtube.com/channel/UC8FK3j_NO0drmiNNBZyhmlw'}
+        >
+          <FaYoutube />
+        </SocialButton>
+      </Flex>
+
+      <Flex
+        justifyContent="end"
+        pr="50px"
+        color="white"
+        h="100px"
+        align="center"
+      >
+        <Text pr="20px">Terms</Text>
+        <Text>Privacy Policy</Text>
       </Flex>
     </Box>
   );

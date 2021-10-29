@@ -95,7 +95,7 @@ function About() {
               textAlign="center"
             >
               Grand Sangeet's mission Is to Provide best service to the clients
-              & an to empower millions of wedding Choreographers worldwide.
+              an to empower millions of wedding Choreographers worldwide.
             </Text>
           </VStack>
           <VStack>
@@ -113,7 +113,7 @@ function About() {
             <Text
               w="300px"
               fontSize={['12px', '12px', '18px']}
-              color="#707070" 
+              color="#707070"
               textAlign="center"
             >
               Our vision is to bring quality, standardization and transparency
