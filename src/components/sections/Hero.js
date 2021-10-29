@@ -34,7 +34,7 @@ export default function Hero() {
         <Box
           w="full"
           bg="black"
-          opacity=".4"
+          opacity=".6"
           h="full"
           position="absolute"
         ></Box>
