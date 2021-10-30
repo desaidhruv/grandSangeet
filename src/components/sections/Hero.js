@@ -13,6 +13,8 @@ import {
 import React from "react";
 import Navbar from "../Navbar";
 import gsmp4 from "../../assets/photos/gs.mp4";
+import bggif from "../../assets/photos/bggif1.gif";
+import bgmob from "../../assets/photos/gsmob.jpg";
 import gsmp4Mob from "../../assets/photos/gs1.mp4";
 import heroArrow from "../../assets/photos/hero arrow.png";
 import "@fontsource/poppins";
@@ -23,7 +25,7 @@ export default function Hero() {
   const [isLargerThan1280] = useMediaQuery("(min-width: 768px)");
   return (
     <>
-      {isLargerThan1280 ? (
+      {/* {isLargerThan1280 ? (
         <video
           style={{
             position: "absolute",
@@ -51,8 +53,21 @@ export default function Hero() {
         >
           <source src={gsmp4Mob} type="video/mp4" />
         </video>
-      )}
+      )} */}
+      {/* <Box
+        backgroundImage={[bgmob,bggif,bggif,bggif]}
+        backgroundRepeat="no-repeat"
+        backgroundPosition="center"
+        backgroundSize="cover"
+        w="full"
+        h="100vh"
+        pos="relative"
+      ></Box> */}
       <Box
+        backgroundImage={[bgmob,bggif,bggif,bggif]}
+        backgroundRepeat="no-repeat"
+        backgroundPosition="center"
+        backgroundSize="cover"
         w="full"
         h="100vh"
         pos="relative"
