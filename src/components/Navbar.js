@@ -69,18 +69,18 @@ export default function Navbar() {
               <Image w="40px" h="40px" onClick={onClose} src={close} />
             </Box>
             <Box w="full" as={Center} h="105px">
-              <Image w="80px" h="80px" src={mhome} />
+              <Image w="80px" h="80px" onClick={onClose} src={mhome} />
             </Box>
             <Center as={Link} w="full" href="#gallery" h="105px">
-              <Image w="60px" h="60px" src={mgallery} />
+              <Image w="60px" h="60px" onClick={onClose} src={mgallery} />
             </Center>
             <Center as={Link} w="full" href="#about" h="105px">
-              <Image href="#about" w="80px" h="80px" src={maboutus} />
+              <Image href="#about" w="80px" h="80px" onClick={onClose} src={maboutus} />
             </Center>
             <Center as={Link} w="full" href="#contact" h="105px">
-              <Image w="80px" h="80px" src={mcontactus} />
+              <Image w="80px" h="80px" onClick={onClose} src={mcontactus} />
             </Center>
-            <Box
+            {/* <Box
               borderBottomLeftRadius="40px"
               bg="#FF3B63"
               w="full"
@@ -88,7 +88,7 @@ export default function Navbar() {
               h="105px"
             >
               <Image w="80px" h="80px" src={mjoinus} />
-            </Box>
+            </Box> */}
           </VStack>
           {/* </DrawerBody> */}
         </DrawerContent>

@@ -326,7 +326,7 @@ function Community() {
                 size="l"
                 _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
               >
-                Join us
+                Join Now
               </Button>
             </Box>
           </form>
