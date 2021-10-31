@@ -24,6 +24,11 @@ import maboutus from "../assets/photos/maboutus.svg";
 import mcontactus from "../assets/photos/mcontactus.svg";
 import mjoinus from "../assets/photos/mjoinus.svg";
 export default function Navbar() {
+  function dClose() {
+    setTimeout(() => {
+      onClose();
+    }, 2000);
+  }
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Flex pt="20px" pb="20px" pl="40px" justify="space-between" pr="40px">
@@ -69,16 +74,28 @@ export default function Navbar() {
               <Image w="40px" h="40px" onClick={onClose} src={close} />
             </Box>
             <Box w="full" as={Center} h="105px">
-              <Image w="80px" h="80px" onClick={onClose} src={mhome} />
+              <Image w="80px" h="80px" src={mhome} />
             </Box>
-            <Center as={Link} w="full" href="#gallery" h="105px">
-              <Image w="60px" h="60px" onClick={onClose} src={mgallery} />
+            <Center
+              as={Link}
+              w="full"
+              href="#gallery"
+              onClick={dClose}
+              h="105px"
+            >
+              <Image w="60px" h="60px" src={mgallery} />
             </Center>
             <Center as={Link} w="full" href="#about" h="105px">
-              <Image href="#about" w="80px" h="80px" onClick={onClose} src={maboutus} />
+              <Image w="80px" h="80px" onClick={dClose} src={maboutus} />
             </Center>
-            <Center as={Link} w="full" href="#contact" h="105px">
-              <Image w="80px" h="80px" onClick={onClose} src={mcontactus} />
+            <Center
+              as={Link}
+              w="full"
+              href="#contact"
+              onClick={dClose}
+              h="105px"
+            >
+              <Image w="80px" h="80px" src={mcontactus} />
             </Center>
             {/* <Box
               borderBottomLeftRadius="40px"
