@@ -8,7 +8,13 @@ import {
   InputRightElement,
   Button,
   Image,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalFooter,
+  ModalBody,
   HStack,
+  useDisclosure,
   Center,
   VStack,
   FormLabel,
@@ -29,6 +35,11 @@ export default function Contact() {
     date: "",
     message: "",
   });
+  const {
+    isOpen: isOpen2,
+    onOpen: onOpen2,
+    onClose: onClose2,
+  } = useDisclosure();
   const { name, email, number, date, message } = data;
 
   const handleSubmit = async (e) => {
@@ -45,7 +56,12 @@ export default function Contact() {
             [name, email, number, date, message, new Date().toLocaleString()],
           ]),
         }
-      );
+      ).then(() => {
+        onOpen2();
+        setTimeout(() => {
+          onClose2();
+        }, 1000);
+      });
       setData({ name: "", email: "", number: "", message: "", date: "" });
     } catch (err) {
       console.log(err);
@@ -58,6 +74,17 @@ export default function Contact() {
       <Text fontSize="48px" h="150px" as={Center} fontWeight="medium">
         Contact us
       </Text>
+      <Modal size="xs" onClose={onClose2} isOpen={isOpen2}>
+        <ModalOverlay />
+        <ModalContent mt="200px" fontFamily="Poppins" borderRadius="20px">
+          <ModalBody>
+            <Center fontSize="25px" h="150px">
+              ✔️ Submitted!
+            </Center>
+          </ModalBody>
+          <ModalFooter></ModalFooter>
+        </ModalContent>
+      </Modal>
 
       <Flex
         justifyContent="space-evenly"
