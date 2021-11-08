@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   VStack,
   Image,
@@ -12,95 +12,107 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
+  ModalFooter,
+  ModalBody,
   Input,
   HStack,
   Box,
   Icon,
-} from '@chakra-ui/react';
-import globalScope from '../../assets/photos/global scope.png';
-import mentoring from '../../assets/photos/mentoring.png';
-import businessGrowth from '../../assets/photos/business growth.png';
-import salesTeam from '../../assets/photos/sales team.png';
-import ImageModal from '../../assets/photos/Modal.svg';
-import { Divider } from './Divider';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { useState } from 'react';
+} from "@chakra-ui/react";
+import globalScope from "../../assets/photos/global scope.png";
+import mentoring from "../../assets/photos/mentoring.png";
+import businessGrowth from "../../assets/photos/business growth.png";
+import salesTeam from "../../assets/photos/sales team.png";
+import ImageModal from "../../assets/photos/Modal.svg";
+import { Divider } from "./Divider";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useState } from "react";
 
 function Community() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    isOpen: isOpen2,
+    onOpen: onOpen2,
+    onClose: onClose2,
+  } = useDisclosure();
   const [data, setData] = useState({
-    name: '',
-    email: '',
-    number: '',
-    link: '',
+    name: "",
+    email: "",
+    number: "",
+    link: "",
   });
   const { name, email, number, link } = data;
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await fetch(
-        'https://v1.nocodeapi.com/kkeval/google_sheets/JxXOUpuppfEujiAB?tabId=Sheet1',
+        "https://v1.nocodeapi.com/kkeval/google_sheets/JxXOUpuppfEujiAB?tabId=Sheet1",
         {
-          method: 'POST',
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify([
             [name, email, number, link, new Date().toLocaleString()],
           ]),
         }
-      );
-      setData({ name: '', email: '', number: '', link: '' });
+      ).then(() => {
+        onOpen2();
+        setTimeout(() => {
+          onClose2();
+        }, 1000);
+      });
+      setData({ name: "", email: "", number: "", link: "" });
     } catch (err) {
       console.log(err);
     }
   };
-  const handleChange = e =>
+  const handleChange = (e) =>
     setData({ ...data, [e.target.name]: e.target.value });
   return (
     <>
-      <VStack as={Center} spacing={['5px', '10px', '40px', '45px']}>
-        <Text fontSize={['24px', '24px', '32px', '36px']} className="fontClass">
+      <VStack as={Center} spacing={["5px", "10px", "40px", "45px"]}>
+        <Text fontSize={["24px", "24px", "32px", "36px"]} className="fontClass">
           Join our community!
         </Text>
-        <Text fontSize={['20px', '20px', '32px', '33px']} fontWeight="bold">
+        <Text fontSize={["20px", "20px", "32px", "33px"]} fontWeight="bold">
           Why to join us?
         </Text>
         <Flex
           p="40px 0px"
-          justify={['stretch', 'stretch', 'stretch', 'space-evenly']}
-          w={['75%', '80%', '80%', '95%']}
+          justify={["stretch", "stretch", "stretch", "space-evenly"]}
+          w={["75%", "80%", "80%", "95%"]}
           h="full"
           overflowY="hidden"
           overflowX="auto"
         >
           <VStack
             boxShadow="5px 5px 11px 0px #0000001A"
-            w={['121px', '121px', '121px', '290px']}
-            h={['298px', '298px', '298px', '477px']}
-            rounded={'17px'}
-            bg={'white'}
+            w={["121px", "121px", "121px", "290px"]}
+            h={["298px", "298px", "298px", "477px"]}
+            rounded={"17px"}
+            bg={"white"}
             as={Center}
             mr="20px"
             flex="0 0 auto"
           >
             <VStack
               fontFamily="Poppins"
-              spacing={['10px', '15px', '18px', '25px']}
+              spacing={["10px", "15px", "18px", "25px"]}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={globalScope} />
+                <Image w={["73px", "73px", "73px", "full"]} src={globalScope} />
               </Box>
               <Text
-                fontSize={['12px', '12px', '12px', '24px']}
+                fontSize={["12px", "12px", "12px", "24px"]}
                 textAlign="center"
               >
                 Global Scope
               </Text>
               <Text
                 w="95%"
-                fontSize={['10px', '10px', '10px', '18px']}
+                fontSize={["10px", "10px", "10px", "18px"]}
                 color="#707070"
                 textAlign="center"
               >
@@ -112,68 +124,68 @@ function Community() {
           </VStack>
           <VStack
             boxShadow="5px 5px 11px 0px #0000001A"
-            w={['121px', '121px', '121px', '290px']}
-            h={['298px', '298px', '298px', '477px']}
-            rounded={'17px'}
-            bg={'white'}
+            w={["121px", "121px", "121px", "290px"]}
+            h={["298px", "298px", "298px", "477px"]}
+            rounded={"17px"}
+            bg={"white"}
             as={Center}
             mr="20px"
             flex="0 0 auto"
           >
             <VStack
               fontFamily="Poppins"
-              spacing={['10px', '15px', '18px', '25px']}
+              spacing={["10px", "15px", "18px", "25px"]}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={mentoring} />
+                <Image w={["73px", "73px", "73px", "full"]} src={mentoring} />
               </Box>
               <Text
-                fontSize={['12px', '12px', '12px', '24px']}
+                fontSize={["12px", "12px", "12px", "24px"]}
                 textAlign="center"
               >
                 Mentoring
               </Text>
               <Text
                 w="95%"
-                fontSize={['10px', '10px', '10px', '18px']}
+                fontSize={["10px", "10px", "10px", "18px"]}
                 color="#707070"
                 textAlign="center"
               >
                 You will get mentored by industry experts which will eventually
-                enhance your expertise and will lead you to the path of becoming a
-                successful wedding choreographer.
+                enhance your expertise and will lead you to the path of becoming
+                a successful wedding choreographer.
               </Text>
             </VStack>
           </VStack>
           <VStack
             boxShadow="5px 5px 11px 0px #0000001A"
-            w={['121px', '121px', '121px', '290px']}
-            h={['298px', '298px', '298px', '477px']}
-            rounded={'17px'}
-            bg={'white'}
+            w={["121px", "121px", "121px", "290px"]}
+            h={["298px", "298px", "298px", "477px"]}
+            rounded={"17px"}
+            bg={"white"}
             as={Center}
             mr="20px"
             flex="0 0 auto"
           >
             <VStack
               fontFamily="Poppins"
-              spacing={['10px', '15px', '18px', '25px']}
+              spacing={["10px", "15px", "18px", "25px"]}
             >
               <Box as={Center}>
                 <Image
-                  w={['73px', '73px', '73px', 'full']}
+                  w={["73px", "73px", "73px", "full"]}
                   src={businessGrowth}
                 />
               </Box>
               <Text
-                fontSize={['12px', '12px', '12px', '24px']}
+                fontSize={["12px", "12px", "12px", "24px"]}
                 textAlign="center"
               >
                 Business Growth
               </Text>
               <Text
                 w="95%"
-                fontSize={['10px', '10px', '10px', '18px']}
+                fontSize={["10px", "10px", "10px", "18px"]}
                 color="#707070"
                 textAlign="center"
               >
@@ -185,30 +197,30 @@ function Community() {
           </VStack>
           <VStack
             boxShadow="5px 5px 11px 0px #0000001A"
-            w={['121px', '121px', '121px', '290px']}
-            h={['298px', '298px', '298px', '477px']}
-            rounded={'17px'}
-            bg={'white'}
+            w={["121px", "121px", "121px", "290px"]}
+            h={["298px", "298px", "298px", "477px"]}
+            rounded={"17px"}
+            bg={"white"}
             as={Center}
             mr="20px"
             flex="0 0 auto"
           >
             <VStack
               fontFamily="Poppins"
-              spacing={['10px', '15px', '18px', '25px']}
+              spacing={["10px", "15px", "18px", "25px"]}
             >
               <Box as={Center}>
-                <Image w={['73px', '73px', '73px', 'full']} src={salesTeam} />
+                <Image w={["73px", "73px", "73px", "full"]} src={salesTeam} />
               </Box>
               <Text
-                fontSize={['12px', '12px', '12px', '24px']}
+                fontSize={["12px", "12px", "12px", "24px"]}
                 textAlign="center"
               >
                 Sales Team
               </Text>
               <Text
                 w="95%"
-                fontSize={['10px', '10px', '10px', '18px']}
+                fontSize={["10px", "10px", "10px", "18px"]}
                 color="#707070"
                 textAlign="center"
               >
@@ -220,6 +232,17 @@ function Community() {
           </VStack>
         </Flex>
       </VStack>
+      <Modal size="xs" onClose={onClose2} isOpen={isOpen2}>
+        <ModalOverlay />
+        <ModalContent mt="200px" fontFamily="Poppins" borderRadius="20px">
+          <ModalBody>
+            <Center fontSize="25px" h="150px">
+              ✔️ Submitted!
+            </Center>
+          </ModalBody>
+          <ModalFooter></ModalFooter>
+        </ModalContent>
+      </Modal>
       <Modal size="5xl" onClose={onClose} isOpen={isOpen}>
         <ModalOverlay />
         <ModalContent fontFamily="Poppins" borderRadius="20px" bg="#FFECF1">
@@ -234,12 +257,12 @@ function Community() {
             as={AiOutlineCloseCircle}
           />
 
-          <Text p="20px" as={Center} fontSize={['30px', '30px', '40px']}>
+          <Text p="20px" as={Center} fontSize={["30px", "30px", "40px"]}>
             Join our community!
           </Text>
           <form onSubmit={handleSubmit}>
             <Flex
-              fontSize={['25px', '25px', '35px']}
+              fontSize={["25px", "25px", "35px"]}
               justify="space-evenly"
               pt="50px"
               justify="center"
@@ -248,7 +271,7 @@ function Community() {
             >
               <Flex
                 direction="row"
-                w={['90%', '90%', '60%']}
+                w={["90%", "90%", "60%"]}
                 as={Center}
                 justify="space-evenly"
               >
@@ -279,7 +302,7 @@ function Community() {
               </Flex>
             </Flex>
             <Flex
-              fontSize={['25px', '25px', '35px']}
+              fontSize={["25px", "25px", "35px"]}
               pt="50px"
               justify="center"
               w="full"
@@ -287,7 +310,7 @@ function Community() {
             >
               <Flex
                 direction="row"
-                w={['90%', '90%', '60%']}
+                w={["90%", "90%", "60%"]}
                 as={Center}
                 justify="space-evenly"
               >
@@ -321,10 +344,10 @@ function Community() {
                 type="submit"
                 required={true}
                 // onClick={handleSubmit}
-                fontSize={['18px', '20px', '30px']}
+                fontSize={["18px", "20px", "30px"]}
                 bg="#FF3B63"
                 size="l"
-                _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
+                _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}
               >
                 Join Now
               </Button>
@@ -332,7 +355,7 @@ function Community() {
           </form>
 
           <Box
-            display={['none', 'flex', 'flex']}
+            display={["none", "flex", "flex"]}
             overflow="hidden"
             pos="absolute"
             right="0"
@@ -345,7 +368,7 @@ function Community() {
         </ModalContent>
       </Modal>
       <VStack height="300px" w="full" spacing="30px" as={Center}>
-        <Text textAlign="center" fontSize={['20px', '22px', '32px', '36px']}>
+        <Text textAlign="center" fontSize={["20px", "22px", "32px", "36px"]}>
           Join our community <br /> to help you grow as choreographers.
         </Text>
         <HStack spacing="30px">
@@ -354,7 +377,7 @@ function Community() {
             color="white"
             bgColor="brand.100"
             size="lg"
-            _hover={{ bg: '#FBB1C3', color: '#FF3B63' }}
+            _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}
           >
             Join Now
           </Button>

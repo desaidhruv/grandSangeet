@@ -80,19 +80,21 @@ export default function Navbar() {
               as={Link}
               w="full"
               href="#gallery"
-              onClick={dClose}
+              // onClick={dClose}
               h="105px"
             >
               <Image w="60px" h="60px" src={mgallery} />
             </Center>
             <Center as={Link} w="full" href="#about" h="105px">
-              <Image w="80px" h="80px" onClick={dClose} src={maboutus} />
+              <Image w="80px" h="80px" 
+              // onClick={dClose} 
+              src={maboutus} />
             </Center>
             <Center
               as={Link}
               w="full"
               href="#contact"
-              onClick={dClose}
+              // onClick={dClose}
               h="105px"
             >
               <Image w="80px" h="80px" src={mcontactus} />
