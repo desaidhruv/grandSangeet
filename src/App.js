@@ -7,29 +7,19 @@ import "./App.css"
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
-  // const handleLoading = () => {
-  //   setIsLoading(false);
-  // }
+  const handleLoading = () => {
+    setIsLoading(false);
+  }
   React.useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 5000)
-    // window.addEventListener("load", handleLoading);
-    // return () => window.removeEventListener("load", handleLoading);
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
   }, [])
-  return(
+  return !isLoading ? (
     <ChakraProvider theme={theme}>
     {/* <Fonts /> */}
-    {isLoading ? <Loading /> : <Landing />}
-    
+    <Landing />
   </ChakraProvider>
-  ) 
-  // return isLoading ? (
-  //   <ChakraProvider theme={theme}>
-  //   {/* <Fonts /> */}
-  //   <Landing />
-  // </ChakraProvider>
-  // ):(<Loading />)
+  ):(<Loading />)
   // (
   //   <ChakraProvider theme={theme}>
   //     {/* <Fonts /> */}
