@@ -98,10 +98,10 @@ function Team() {
                 style={{ transform: "translateY(1em)" }}
                 // _hover={{ transform: 'translateY(0)' }}
               >
-                Blazing fast web hosting for individuals and businesses of all
-                sizes backed by 24x7x365 Support.Blazing fast web. Blazing fast
-                web hosting for individuals and businesses of all sizes backed
-                by 24x7x365 Support.Blazing fast web.
+                Loves to read books, play sports and listen to music. Passionate
+                about simplifying things through technology. 2+ years of
+                experience in developing scalable web applications with a knack
+                in problem solving.
               </Text>
             </Box>
           </Box>
@@ -143,10 +143,10 @@ function Team() {
                 style={{ transform: "translateY(1em)" }}
                 // _hover={{ transform: 'translateY(0)' }}
               >
-                Blazing fast web hosting for individuals and businesses of all
-                sizes backed by 24x7x365 Support.Blazing fast web. Blazing fast
-                web hosting for individuals and businesses of all sizes backed
-                by 24x7x365 Support.Blazing fast web.
+                Loves to dance with the rhythms, play sports and good with
+                numbers. Enthusiast in solving problems that include creativity
+                and innovation. 2+ years of experience in delivering quality
+                Software applications using Machine Learning.
               </Text>
             </Box>
           </Box>
@@ -188,10 +188,10 @@ function Team() {
                 style={{ transform: "translateY(1em)" }}
                 // _hover={{ transform: 'translateY(0)' }}
               >
-                Blazing fast web hosting for individuals and businesses of all
-                sizes backed by 24x7x365 Support.Blazing fast web. Blazing fast
-                web hosting for individuals and businesses of all sizes backed
-                by 24x7x365 Support.Blazing fast web.
+                Pursuing an engineer's Degree focused in Computer Science, with
+                wide knowledge and hands-on experience of Web development in
+                multiple Start-ups and as a Freelancer. Skilled in Problem
+                Solving, React.js and creativity and a Professional Photographer.
               </Text>
             </Box>
           </Box>
