@@ -13,7 +13,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000)
+    }, 5000)
     // window.addEventListener("load", handleLoading);
     // return () => window.removeEventListener("load", handleLoading);
   }, [])
