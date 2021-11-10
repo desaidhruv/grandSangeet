@@ -14,12 +14,12 @@ function App() {
     window.addEventListener("load", handleLoading);
     return () => window.removeEventListener("load", handleLoading);
   }, [])
-  return !isLoading ? (
+  return (
     <ChakraProvider theme={theme}>
-    {/* <Fonts /> */}
-    <Landing />
-  </ChakraProvider>
-  ):(<Loading />)
+      {!isLoading ? <Landing /> : <Loading />}
+      {/* <Fonts /> */}
+    </ChakraProvider>
+  )
   // (
   //   <ChakraProvider theme={theme}>
   //     {/* <Fonts /> */}
