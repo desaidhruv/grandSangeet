@@ -143,9 +143,9 @@ export default function Contact() {
                 fontSize={["24px", "28px", "48px"]}
                 textAlign="center"
               >
-                Thanks for Joining!{" "}
+                Our team member will reach you soon{" "}
               </Text>
-              <Text
+              {/* <Text
                 color={["#808080", "black", "black", "black"]}
                 fontFamily="Poppins"
                 fontSize={["14px", "20px", "24px"]}
@@ -153,7 +153,7 @@ export default function Contact() {
                 textAlign="center"
               >
                 As your application approved you will received the mail.
-              </Text>
+              </Text> */}
             </VStack>
             <Box
               display={["flex", "flex", "flex"]}
