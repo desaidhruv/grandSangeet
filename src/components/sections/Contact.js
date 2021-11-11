@@ -63,7 +63,7 @@ export default function Contact() {
         onOpen2();
         setTimeout(() => {
           onClose2();
-        }, 1000);
+        }, 4000);
       });
       setData({ name: "", email: "", number: "", message: "", date: "" });
     } catch (err) {
@@ -143,17 +143,17 @@ export default function Contact() {
                 fontSize={["24px", "28px", "48px"]}
                 textAlign="center"
               >
-                Our team member will reach you soon{" "}
+                Thank you for contacting us.{" "}
               </Text>
-              {/* <Text
+              <Text
                 color={["#808080", "black", "black", "black"]}
                 fontFamily="Poppins"
                 fontSize={["14px", "20px", "24px"]}
                 fontWeight="light"
                 textAlign="center"
               >
-                As your application approved you will received the mail.
-              </Text> */}
+                Our team member will reach you soon.
+              </Text>
             </VStack>
             <Box
               display={["flex", "flex", "flex"]}

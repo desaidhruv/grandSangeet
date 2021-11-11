@@ -61,7 +61,7 @@ function Community() {
         onOpen2();
         setTimeout(() => {
           // onClose2();
-        }, 1500);
+        }, 4000);
       });
       setData({ name: "", email: "", number: "", link: "" });
     } catch (err) {
