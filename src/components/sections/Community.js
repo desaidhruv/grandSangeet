@@ -457,7 +457,7 @@ function Community() {
       </Modal>
       <VStack height="300px" w="full" spacing="30px" as={Center}>
         <Text textAlign="center" fontSize={["20px", "22px", "32px", "36px"]}>
-          Join our community <br /> to help you grow as choreographers.
+          Join our community <br /> to help you grow as a choreographer.
         </Text>
         <HStack spacing="30px">
           <Button
