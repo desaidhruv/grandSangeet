@@ -83,7 +83,7 @@ export default function Gallery() {
                     borderRadius="15px"
                   />
                 </VStack>
-                <VStack>
+                {/* <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
@@ -114,7 +114,7 @@ export default function Gallery() {
                     src={Gallery8}
                     borderRadius="15px"
                   />
-                </VStack>
+                </VStack> */}
               </SimpleGrid>
             </TabPanel>
             <TabPanel>
@@ -155,7 +155,7 @@ export default function Gallery() {
                     borderRadius="15px"
                   />
                 </VStack>
-                <VStack>
+                {/* <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
@@ -186,7 +186,7 @@ export default function Gallery() {
                     src={Gallery8}
                     borderRadius="15px"
                   />
-                </VStack>
+                </VStack> */}
               </SimpleGrid>
             </TabPanel>
             <TabPanel>
