@@ -1,6 +1,7 @@
 @font-face {    
   font-family:'Minnadrop'; 
-  src: url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType'), url('./assets/fonts/Minnadrop-Regular.otf') format('OpenType')
+  src: url('./assets/fonts/Minnadrop-Regular.woff') format('woff'), url('./assets/fonts/Minnadrop-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 html, body {
