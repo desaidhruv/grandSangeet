@@ -65,7 +65,7 @@ export default function Gallery() {
                   />
                 </VStack>
                 <VStack>
-                  <iframe
+                  {/* <iframe
                     height="100%"
                     width="100%"
                     src="https://www.youtube.com/embed/8Pot-rK-13Y?modestbranding=1&autoplay=1&showinfo=0&controls=0"
@@ -73,7 +73,7 @@ export default function Gallery() {
                     frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     className="ytVideo"
-                  ></iframe>
+                  ></iframe> */}
                 </VStack>
                 <VStack>
                   <Image
@@ -195,7 +195,7 @@ export default function Gallery() {
                 spacingX="18px"
                 spacingY="20px"
               >
-                <iframe
+                {/* <iframe
                   height="100%"
                   width="100%"
                   src="https://www.youtube.com/embed/8Pot-rK-13Y?controls=0"
@@ -212,7 +212,7 @@ export default function Gallery() {
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                   className="ytVideo"
-                  ></iframe>
+                  ></iframe> */}
                 {/* <iframe
                   src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
                   title="YouTube video player"

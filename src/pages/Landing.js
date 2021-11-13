@@ -18,7 +18,7 @@ export default function Landing() {
         <WhyWeAre />
         <Services />
         <Work/>
-        {/* <Gallery />  */}
+        <Gallery /> 
         <Testimonial/>
         <About />
         <Team />
