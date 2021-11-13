@@ -64,8 +64,8 @@ export default function Gallery() {
                     borderRadius="15px"
                   />
                 </VStack>
-                <VStack>
-                  {/* <iframe
+                {/* <VStack>
+                  <iframe
                     height="100%"
                     width="100%"
                     src="https://www.youtube.com/embed/8Pot-rK-13Y?modestbranding=1&autoplay=1&showinfo=0&controls=0"
@@ -73,8 +73,8 @@ export default function Gallery() {
                     frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     className="ytVideo"
-                  ></iframe> */}
-                </VStack>
+                  ></iframe>
+                </VStack> */}
                 <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
@@ -83,7 +83,7 @@ export default function Gallery() {
                     borderRadius="15px"
                   />
                 </VStack>
-                {/* <VStack>
+                <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
@@ -107,7 +107,7 @@ export default function Gallery() {
                     borderRadius="15px"
                   />
                 </VStack>
-                <VStack>
+                {/* <VStack>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
