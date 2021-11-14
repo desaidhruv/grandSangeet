@@ -23,6 +23,8 @@ import mgallery from "../assets/photos/mgallery.svg";
 import maboutus from "../assets/photos/maboutus.svg";
 import mcontactus from "../assets/photos/mcontactus.svg";
 import mjoinus from "../assets/photos/mjoinus.svg";
+import { Link as ReLink } from 'react-router-dom';
+
 export default function Navbar() {
   function dClose() {
     setTimeout(() => {
@@ -33,11 +35,13 @@ export default function Navbar() {
   return (
     <Flex pt="20px" pb="20px" pl="40px" justify="space-between" pr="40px">
       <Box zIndex="1" as={Center}>
-        <Image
-          h={["64px", "64px", "84px"]}
-          w={["58px", "58px", "78px"]}
-          src={logo}
-        />
+        <Link as={ReLink} to='/'>
+          <Image
+            h={["64px", "64px", "84px"]}
+            w={["58px", "58px", "78px"]}
+            src={logo}
+          />
+        </Link>
       </Box>
 
       <Spacer />
@@ -60,7 +64,7 @@ export default function Navbar() {
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
-        // finalFocusRef={btnRef}
+      // finalFocusRef={btnRef}
       >
         <DrawerOverlay />
         <DrawerContent
@@ -79,16 +83,16 @@ export default function Navbar() {
             <Center
               as={Link}
               w="full"
-              href="#gallery"
+              to='/gallery'
               // onClick={dClose}
               h="105px"
             >
               <Image w="60px" h="60px" src={mgallery} />
             </Center>
             <Center as={Link} w="full" href="#about" h="105px">
-              <Image w="80px" h="80px" 
-              // onClick={dClose} 
-              src={maboutus} />
+              <Image w="80px" h="80px"
+                // onClick={dClose} 
+                src={maboutus} />
             </Center>
             <Center
               as={Link}
@@ -121,7 +125,7 @@ export default function Navbar() {
         <Button colorScheme="white" as={Link} href="#about">
           About us
         </Button>
-        <Button as={Link} colorScheme="white" href="#gallery">
+        <Button as={ReLink} colorScheme="white" to="/gallery">
           Gallery
         </Button>
         <Button as={Link} colorScheme="white" href="#contact">

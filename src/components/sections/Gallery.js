@@ -6,9 +6,10 @@ import {
   Center,
   Flex,
   SimpleGrid,
-
+  Button,
 } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
+import Video from '../../assets/photos/video (1).svg';
 import Gallery1 from '../../assets/photos/gallery1.jpeg';
 import Gallery2 from '../../assets/photos/gallery2.jpeg';
 import Gallery3 from '../../assets/photos/gallery3.jpeg';
@@ -22,6 +23,7 @@ import Gallery8 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.07 P
 // import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
 // import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
 import { Divider } from './Divider';
+import { Link as ReLink } from 'react-router-dom';
 import './gallery.css';
 
 export default function Gallery() {
@@ -48,7 +50,7 @@ export default function Gallery() {
                 spacingX="18px"
                 spacingY="20px"
               >
-                <VStack display={['none', 'none', 'flex', 'flex']}>
+                {/* <VStack display={['none', 'none', 'flex', 'flex']}>
                   <Image
                     h={['107px', '107px', '107px', '206px']}
                     w={['151px', '151px', '151px', '290px']}
@@ -63,7 +65,7 @@ export default function Gallery() {
                     src={Gallery2}
                     borderRadius="15px"
                   />
-                </VStack>
+                </VStack> */}
                 {/* <VStack>
                   <iframe
                     height="100%"
@@ -188,6 +190,9 @@ export default function Gallery() {
                   />
                 </VStack> */}
               </SimpleGrid>
+              <Center as={ReLink} to='/gallery'>
+                <Button mt="20px" bg="brand.100" color="white" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>View all Images</Button>
+              </Center>
             </TabPanel>
             <TabPanel>
               <SimpleGrid
@@ -195,47 +200,26 @@ export default function Gallery() {
                 spacingX="18px"
                 spacingY="20px"
               >
-                {/* <iframe
-                  height="100%"
-                  width="100%"
-                  src="https://www.youtube.com/embed/8Pot-rK-13Y?controls=0"
-                  title="YouTube video player"
-                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  className="ytVideo"
-                ></iframe>
-                <iframe 
-                  height="100%"
-                  width="100%"
-                  src="https://www.youtube.com/embed/LtvnCpdx94M?controls=0&modestbranding=0" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                  className="ytVideo"
-                  ></iframe> */}
-                {/* <iframe
-                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-
-                <iframe
-                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <iframe
-                  src="https://www.youtube.com/embed/-mMF-VoHTJ8?start=67"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe> */}
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '72px']}
+                    w={['151px', '151px', '151px', '72px']}
+                    src={Video}
+                    borderRadius="15px"
+                  />
+                </VStack>
+                <VStack>
+                  <Image
+                    h={['107px', '107px', '107px', '72px']}
+                    w={['151px', '151px', '151px', '72px']}
+                    src={Video}
+                    borderRadius="15px"
+                  />
+                </VStack>
               </SimpleGrid>
+              <Center as={ReLink} to='/gallery'>
+                <Button mt="20px" bg="brand.100" color="white" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>View all Videos</Button>
+              </Center>
             </TabPanel>
           </TabPanels>
         </Tabs>
