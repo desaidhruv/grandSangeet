@@ -26,13 +26,14 @@ import Gallery8 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.07 P
 // import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
 // import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
 import { ChevronLeftIcon } from '@chakra-ui/icons'
+import { Link as ReLink } from 'react-router-dom';
 import './gallery.css';
 
 function GalleryMain() {
     return (
         <>
             {/* <Navbar /> */}
-            <Link m="20px">
+            <Link m="20px" as={ReLink} to="/">
             <Image src={heroArrow} ml="20px"/>
             </Link>
             <Flex direction="column" spacing="15px" as={Center} id="gallery">

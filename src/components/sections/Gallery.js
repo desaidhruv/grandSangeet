@@ -118,6 +118,9 @@ export default function Gallery() {
                   />
                 </VStack> */}
               </SimpleGrid>
+                <Center as={ReLink} to='/gallery'>
+                  <Button mt="20px" bg="brand.100" color="white" _hover={{ bg: "#FBB1C3", color: "#FF3B63" }}>View album</Button>
+                </Center>
             </TabPanel>
             <TabPanel>
               <SimpleGrid
