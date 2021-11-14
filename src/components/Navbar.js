@@ -81,7 +81,7 @@ export default function Navbar() {
               <Image w="80px" h="80px" src={mhome} />
             </Box>
             <Center
-              as={Link}
+              as={ReLink}
               w="full"
               to='/gallery'
               // onClick={dClose}

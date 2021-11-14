@@ -7,8 +7,11 @@ import {
     Center,
     Flex,
     SimpleGrid,
+    Button,
+    Link,
 
 } from '@chakra-ui/react';
+import heroArrow from "../../assets/photos/backArrowGallery.png";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Gallery1 from '../../assets/photos/gallery1.jpeg';
 import Gallery2 from '../../assets/photos/gallery2.jpeg';
@@ -22,13 +25,16 @@ import Gallery8 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.07 P
 // import Gallery10 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.09 PM.jpeg';
 // import Gallery11 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.10 PM.jpeg';
 // import Gallery12 from '../../assets/photos/WhatsApp Image 2021-10-09 at 7.15.11 PM.jpeg';
-import { Divider } from './Divider';
+import { ChevronLeftIcon } from '@chakra-ui/icons'
 import './gallery.css';
 
 function GalleryMain() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
+            <Link m="20px">
+            <Image src={heroArrow} ml="20px"/>
+            </Link>
             <Flex direction="column" spacing="15px" as={Center} id="gallery">
                 <Text fontSize="36px" fontWeight="medium" style={{ fontFamily: 'Poppins' }}>
                     Gallery
